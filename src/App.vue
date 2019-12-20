@@ -1,17 +1,35 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <titlepage></titlepage>
+
+  <full-page ref="fullpage" :options="options" id="fullpage">
+    <div class="section">
+      First section ...
+    </div>
+    <div class="section section2">
+      Second section ...
+    </div>
+  </full-page>
+   
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import titlepage from './components/titlepage.vue'
+
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    titlepage
+  },
+  data(){
+    return {
+      option: {
+        anchors: ['section', 'section2', 'page3'],
+        sectionsColor: ['#41b883', '#ff5f45']
+      }
+    }
   }
 }
 </script>
