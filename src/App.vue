@@ -7,7 +7,13 @@
       First section ...
     </div>
     <div class="section section2">
-      Second section ...
+      <b-container class="bv-example-row">
+        <b-row>
+          <b-col>1 of 3</b-col>
+          <b-col>2 of 3</b-col>
+          <b-col>3 of 3</b-col>
+        </b-row>
+      </b-container>
     </div>
   </full-page>
    
@@ -16,7 +22,6 @@
 
 <script>
 import titlepage from './components/titlepage.vue'
-
 
 export default {
   name: 'app',
