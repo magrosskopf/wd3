@@ -1,10 +1,9 @@
 <template>
   <div id="app">
-  <titlepage></titlepage>
+  
 
   <full-page ref="fullpage" :options="options" id="fullpage">
     <div class="section">
-      First section ...
     </div>
     <div class="section section2">
       <b-container class="bv-example-row">
@@ -21,12 +20,12 @@
 </template>
 
 <script>
-import titlepage from './components/titlepage.vue'
+// import titlepage from './components/titlepage.vue'
 
 export default {
   name: 'app',
   components: {
-    titlepage
+    // titlepage
   },
   data(){
     return {
@@ -47,5 +46,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.primary {
+  background: red;
 }
 </style>
