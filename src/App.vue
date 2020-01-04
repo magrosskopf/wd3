@@ -3,7 +3,7 @@
 
 
     <full-page ref="fullpage" :options="options" id="fullpage">
-      <div class="section gradient-start ">
+      <div class="section 01 gradient-start ">
        
           <img src="@/assets/Element 2a.svg" width="80%" class="header-image" />
         
@@ -31,12 +31,38 @@
           </b-row>
         </b-container>
       </div>
-      <div class="section section2 gradient-end ">
+      <div class="section 02 gradient-end ">
         <b-container class="bv-example-row">
           <b-row>
-            <b-col>1 of 3</b-col>
-            <b-col>2 of 3</b-col>
-            <b-col>3 of 3</b-col>
+         
+          </b-row>
+        </b-container>
+      </div>
+      <div class="section 03 bg-blue">
+        <b-container class="bv-example-row">
+          <b-row>
+         
+          </b-row>
+        </b-container>
+      </div>
+       <div class="section 04 ">
+        <b-container class="bv-example-row">
+          <b-row>
+         
+          </b-row>
+        </b-container>
+      </div>
+       <div class="section 05 ">
+        <b-container class="bv-example-row">
+          <b-row>
+         
+          </b-row>
+        </b-container>
+      </div>
+      <div class="section 06 ">
+        <b-container class="bv-example-row">
+          <b-row>
+         
           </b-row>
         </b-container>
       </div>
@@ -57,7 +83,7 @@
       return {
         options: {
           navigation: true,
-          anchors: ['section', 'section2', 'page3']
+          anchors: ['01', '02', '03', '04', '05', '06']
            
         }
       }
@@ -100,6 +126,10 @@ $gradient-color-end: #DFEDF4;
     background: red;
   }
 
+  .bg-blue {
+    background: #DFEDF4;
+  }
+
   .gradient-start {
     background-image: linear-gradient(#FFFFFF, #EFF6F9);
   }
@@ -114,8 +144,45 @@ $gradient-color-end: #DFEDF4;
 
   #fp-nav {
     position: fixed;
-    top: 40%;
+    top: 50%;
     right: 3%;
+  }
 
+  #fp-nav ul {
+    text-align: center;
+  }
+
+  #fp-nav ul li {
+    list-style: none;
+  }
+
+  #fp-nav ul li:after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 45px;
+    background: #00071F;
+    margin: 6px 0 6px 12px;
+  }
+
+  #fp-nav ul li:after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 45px;
+    background: #00071F;
+    margin: 6px 0 6px 12px;
+  }
+
+  #fp-nav ul li:nth-child(6):after {
+    content: "";
+    display: none;
+  }
+
+  #fp-nav ul li a{
+    text-decoration: none;
+    color: #00071F;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 400;
   }
 </style>
