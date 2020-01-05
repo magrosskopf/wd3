@@ -39,11 +39,7 @@
         </b-container>
       </div>
       <div class="section 03 bg-blue">
-        <b-container class="bv-example-row">
-          <b-row>
-         
-          </b-row>
-        </b-container>
+        <erfolge></erfolge>
       </div>
        <div class="section 04 ">
         <b-container class="bv-example-row">
@@ -73,11 +69,13 @@
 
 <script>
   // import titlepage from './components/titlepage.vue'
+  import erfolge from './components/erfolge.vue'
 
   export default {
     name: 'app',
     components: {
       // titlepage
+      erfolge
     },
     data() {
       return {
