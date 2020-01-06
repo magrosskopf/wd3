@@ -1,4 +1,6 @@
 <template>
+
+
   <div id="app">
 
 
@@ -41,12 +43,8 @@
       <div class="section 03 bg-blue">
         <erfolge></erfolge>
       </div>
-       <div class="section 04 ">
-        <b-container class="bv-example-row">
-          <b-row>
-         
-          </b-row>
-        </b-container>
+       <div class="section 04 bg-blue">
+        <chart/>
       </div>
        <div class="section 05 ">
         <b-container class="bv-example-row">
@@ -58,7 +56,7 @@
       <div class="section 06 ">
         <b-container class="bv-example-row">
           <b-row>
-         
+            
           </b-row>
         </b-container>
       </div>
@@ -70,12 +68,14 @@
 <script>
   // import titlepage from './components/titlepage.vue'
   import erfolge from './components/erfolge.vue'
+  import chart from './components/chart'
 
   export default {
     name: 'app',
     components: {
       // titlepage
-      erfolge
+      erfolge,
+      chart
     },
     data() {
       return {
