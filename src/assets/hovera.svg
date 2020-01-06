@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1232.79 623.8">
+    <defs>
+        <style>
+            .cls-1 {
+                fill: #fff;
+            }
+
+            .cls-2,
+            .cls-3,
+            .cls-4 {
+                isolation: isolate;
+            }
+
+            .cls-3 {
+                font-size: 22px;
+                font-family: OpenSans-Regular, Open Sans;
+            }
+
+            .cls-3,
+            .cls-4 {
+                fill: #00071f;
+            }
+
+            .cls-4 {
+                font-size: 38.83px;
+                font-family: Orbitron-Regular, Orbitron;
+            }
+
+            .cls-5 {
+                fill: none;
+                stroke: #707070;
+            }
+        </style>
+    </defs>
+    <title>hovera</title>
+    <g id="Ebene_2" data-name="Ebene 2">
+        <g id="Ebene_1-2" data-name="Ebene 1">
+            <g id="Gruppe_159" data-name="Gruppe 159">
+                <ellipse id="Ellipse_374-2" data-name="Ellipse 374-2" class="cls-1" cx="145.6" cy="149.48" rx="145.6"
+                    ry="149.48" />
+                <g id="_Verbesserung_der_Kundenkommunikation" data-name=" Verbesserung der Kundenkommunikation"
+                    class="cls-2"><text class="cls-3" transform="translate(51.67 112.59)">
+                        <tspan xml:space="preserve"> Verbesserung der </tspan>
+                    </text><text class="cls-3" transform="translate(24.55 142.36)">Kundenkommunikation</text></g>
+                <g class="cls-2"><text class="cls-4" transform="translate(89.57 216.13)">69 %</text></g>
+            </g>
+            <line id="Linie_29" data-name="Linie 29" class="cls-5" x1="26.53" y1="162.42" x2="265.96" y2="162.42" />
+            <g id="Gruppe_161" data-name="Gruppe 161">
+                <ellipse id="Ellipse_376-2" data-name="Ellipse 376-2" class="cls-1" cx="618.2" cy="150" rx="145.57"
+                    ry="149.36" />
+            </g>
+            <g id="_Verbesserung_der_Kundenkommunikation-2" data-name=" Verbesserung der Kundenkommunikation"
+                class="cls-2"><text class="cls-3" transform="translate(527.69 111.15)">
+                    <tspan xml:space="preserve"> Verbesserung der </tspan>
+                </text><text class="cls-3" transform="translate(500.57 140.91)">Kundenkommunikation</text></g>
+            <g class="cls-2"><text class="cls-4" transform="translate(565.59 214.68)">69 %</text></g>
+            <line id="Linie_29-2" data-name="Linie 29" class="cls-5" x1="496.29" y1="162.63" x2="735.71" y2="162.63" />
+            <g id="Gruppe_160" data-name="Gruppe 160">
+                <ellipse id="Ellipse_375-2" data-name="Ellipse 375-2" class="cls-1" cx="1086.18" cy="149.44" rx="146.6"
+                    ry="149.44" />
+            </g>
+            <g id="_Verbesserung_der_Kundenkommunikation-3" data-name=" Verbesserung der Kundenkommunikation"
+                class="cls-2"><text class="cls-3" transform="translate(1001.26 110.45)">
+                    <tspan xml:space="preserve"> Verbesserung der </tspan>
+                </text><text class="cls-3" transform="translate(974.15 140.22)">Kundenkommunikation</text></g>
+            <g class="cls-2"><text class="cls-4" transform="translate(1039.17 213.98)">69 %</text></g>
+            <line id="Linie_29-3" data-name="Linie 29" class="cls-5" x1="966.29" y1="162.63" x2="1205.71" y2="162.63" />
+            <ellipse id="Ellipse_378-2" data-name="Ellipse 378-2" class="cls-1" cx="376.53" cy="473.68" rx="146.24"
+                ry="150.13" />
+            <g id="_Verbesserung_der_Kundenkommunikation-4" data-name=" Verbesserung der Kundenkommunikation"
+                class="cls-2"><text class="cls-3" transform="translate(286.14 435.24)">
+                    <tspan xml:space="preserve"> Verbesserung der </tspan>
+                </text><text class="cls-3" transform="translate(259.03 465)">Kundenkommunikation</text></g>
+            <g class="cls-2"><text class="cls-4" transform="translate(324.05 538.77)">69 %</text></g>
+            <line id="Linie_29-4" data-name="Linie 29" class="cls-5" x1="256.69" y1="485" x2="496.11" y2="485" />
+            <g id="Gruppe_162" data-name="Gruppe 162">
+                <ellipse id="Ellipse_377-2" data-name="Ellipse 377-2" class="cls-1" cx="860.56" cy="473.68" rx="146.24"
+                    ry="150.13" />
+            </g>
+            <g id="_Verbesserung_der_Kundenkommunikation-5" data-name=" Verbesserung der Kundenkommunikation"
+                class="cls-2"><text class="cls-3" transform="translate(767.72 435.54)">
+                    <tspan xml:space="preserve"> Verbesserung der </tspan>
+                </text><text class="cls-3" transform="translate(740.6 465.3)">Kundenkommunikation</text></g>
+            <g class="cls-2"><text class="cls-4" transform="translate(805.62 539.07)">69 %</text></g>
+            <line id="Linie_29-5" data-name="Linie 29" class="cls-5" x1="740.69" y1="485" x2="980.11" y2="485" />
+        </g>
+    </g>
+</svg>
