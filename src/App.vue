@@ -38,8 +38,8 @@
           </b-row>
         </b-container>
       </div>
-      <div class="section 03 bg-blue">
-        <erfolge></erfolge>
+      <div class="section 03 bg-blue" >
+        <erfolge ref="erfolge"></erfolge>
       </div>
        <div class="section 04 ">
         <b-container class="bv-example-row">
@@ -77,14 +77,33 @@
       // titlepage
       erfolge
     },
+    props: {
+      locked3: Boolean,
+    },
     data() {
       return {
         options: {
           navigation: true,
+          onLeave: this.onLeave,
           anchors: ['01', '02', '03', '04', '05', '06']
            
         }
       }
+    },
+    created: function () {
+      this.locked3 = true;
+    },
+    methods: {
+        onLeave(origin, destination) {
+          console.log(destination.anchor.indexOf("03"));
+              var child = this.$refs.erfolge;
+          
+          if(destination.anchor.indexOf("03") === 0 && this.locked3 == true) {
+              console.log("destination");
+
+              child.animStart();
+          }
+        }
     }
   }
 </script>

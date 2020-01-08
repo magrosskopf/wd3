@@ -141,7 +141,8 @@
     export default {
         name: 'erfolge',
         props: {
-            msg: String
+            msg: String,
+           
         },
         data() {
             return {
@@ -150,9 +151,65 @@
                 }
             }
         },
-        animstart() {
-            
-        }
+        mounted() {
+            console.log('xd')
+               document.getElementById("Ellipse_462").setAttribute("r", "0");
+                document.getElementById("Ellipse_449").setAttribute("r", "0");
+                 document.getElementById("Ellipse_449").setAttribute("r", "0");
+
+                   document.getElementById("Ellipse_448").setAttribute("r", "0");
+                   document.getElementById("Ellipse_455").setAttribute("r", "0");
+                   document.getElementById("Ellipse_457").setAttribute("r", "0");
+                   document.getElementById("Ellipse_449").setAttribute("r", "0");
+                   document.getElementById("Ellipse_4464").setAttribute("r", "0");
+                   document.getElementById("Ellipse_463").setAttribute("r", "0");
+                   document.getElementById("Ellipse_460").setAttribute("r", "0");
+                   document.getElementById("Ellipse_459").setAttribute("r", "0");
+                   document.getElementById("Ellipse_458").setAttribute("r", "0");
+                   document.getElementById("Ellipse_452").setAttribute("r", "0");
+                   document.getElementById("Ellipse_451").setAttribute("r", "0");
+                   document.getElementById("Ellipse_450").setAttribute("r", "0");
+                   document.getElementById("Ellipse_453").setAttribute("r", "0");
+                   // document.getElementById("Pfad_2445").setAttribute("class", "cls-1 pfad_empty");
+        },
+        methods: {
+            animStart() {
+                
+                // console.log(document.getElementById("Pfad_2445").class )
+
+                document.getElementById("Pfad_2449").setAttribute("class", "cls-1 pfad");
+                document.getElementById("Pfad_2448").setAttribute("class", "cls-1 pfad");
+                document.getElementById("Pfad_2447").setAttribute("class", "cls-1 pfad");
+                document.getElementById("Pfad_2446").setAttribute("class", "cls-1 pfad");
+                document.getElementById("Pfad_2445").setAttribute("class", "cls-1 pfad");
+
+                window.setTimeout(() => {
+
+
+                   document.getElementById("Ellipse_449").setAttribute("r", "13.59");
+
+                   document.getElementById("Ellipse_462").setAttribute("r", "19.41");
+                   document.getElementById("Ellipse_448").setAttribute("r", "19.41");
+                   document.getElementById("Ellipse_455").setAttribute("r", "19.41");
+                   document.getElementById("Ellipse_457").setAttribute("r", "19.41");
+                   document.getElementById("Ellipse_449").setAttribute("r", "13.59");
+                   document.getElementById("Ellipse_4464").setAttribute("r", "13.59");
+                   document.getElementById("Ellipse_463").setAttribute("r", "13.59");
+                   document.getElementById("Ellipse_460").setAttribute("r", "13.59");
+                   document.getElementById("Ellipse_459").setAttribute("r", "13.59");
+                   document.getElementById("Ellipse_458").setAttribute("r", "13.59");
+                   document.getElementById("Ellipse_452").setAttribute("r", "59.53");
+                   document.getElementById("Ellipse_451").setAttribute("r", "59.53");
+                   document.getElementById("Ellipse_450").setAttribute("r", "59.53");
+                   document.getElementById("Ellipse_453").setAttribute("r", "59.53");
+                }, 1000)
+
+
+                
+    
+
+            }
+        },
     }
 </script>
 
@@ -178,12 +235,21 @@
         }
     }
 
+    #Ellipse_462, #Ellipse_449, #Pfad_2445, .cls-4, .cls-5 {
+        transition: 3000ms ease-in-out;
+    }
+
     .pfad {
         stroke-dasharray: 1000;
         stroke-dashoffset: 1000;
-        animation: build 6s 1s ease-in-out forwards;
+        animation: build 6s  ease-in-out forwards;
     }
 
+    .pfad_empty {
+     stroke-dasharray: 0;
+        stroke-dashoffset: 0;
+    }
+    
     #Pfad_2444 {
         stroke-dasharray: 3000;
         stroke-dashoffset: 3000;
@@ -192,7 +258,6 @@
 
     .svg {
         margin: 25% 0;
-
     }
 
     .gruppe {overflow:hidden;}
