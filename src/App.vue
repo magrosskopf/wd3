@@ -31,8 +31,36 @@
           </b-row>
         </b-container>
       </div>
-      <div class="section section2 gradient-end ">
-        <impressum></impressum>
+      <div class="section 02 gradient-end ">
+        <informationen></informationen>
+      </div>
+      <div class="section 03 bg-blue">
+        <b-container class="bv-example-row">
+          <b-row>
+         
+          </b-row>
+        </b-container>
+      </div>
+       <div class="section 04 ">
+        <b-container class="bv-example-row">
+          <b-row>
+         
+          </b-row>
+        </b-container>
+      </div>
+       <div class="section 05 ">
+        <b-container class="bv-example-row">
+          <b-row>
+         
+          </b-row>
+        </b-container>
+      </div>
+      <div class="section 06 ">
+        <b-container class="bv-example-row">
+          <b-row>
+         
+          </b-row>
+        </b-container>
       </div>
     </full-page>
 
@@ -40,13 +68,12 @@
 </template>
 
 <script>
-  import impressum from './components/impressum.vue'
+  import informationen from './components/informationen.vue'
 
   export default {
     name: 'app',
     components: {
-      // titlepage
-      impressum
+      informationen
     },
     data() {
       return {
@@ -98,7 +125,23 @@ $gradient-color-end: #DFEDF4;
     font-family: 'Orbitron', sans-serif;
     font-weight: 400;
     text-transform: uppercase;
-    margin: 100px 0 60px 0;
+    padding: 100px 0 60px 0;
+  }
+
+  .h3-style {
+    font-size: 26pt
+      /* Original Entwurf war 55pt */
+    ;
+    color: #00071F;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 30px 0 30px 0;
+    text-align: center;
+  }
+
+  .p-left {
+    text-align: left;
   }
 
   .primary {
