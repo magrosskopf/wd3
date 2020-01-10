@@ -92,7 +92,7 @@
 </script>
 
 <style>
-  /* 
+ /* 
 
 $primary-color: #00071F;
 
@@ -109,7 +109,6 @@ $gradient-color-end: #DFEDF4;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
-    margin-top: 60px;
   }
 
   .h1-style {
@@ -120,6 +119,17 @@ $gradient-color-end: #DFEDF4;
     font-family: 'Orbitron', sans-serif;
     font-weight: 400;
     text-transform: uppercase;
+  }
+
+  .h2-style {
+    font-size: 40pt
+      /* Original Entwurf war 55pt */
+    ;
+    color: #00071F;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 100px 0 60px 0;
   }
 
   .primary {
@@ -139,7 +149,11 @@ $gradient-color-end: #DFEDF4;
   }
 
   .header-image {
-    margin-top: -100px;
+    margin-top: -40px;
+  }
+
+  .section {
+    box-sizing: border-box;
   }
 
   #fp-nav {
