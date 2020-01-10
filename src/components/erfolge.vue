@@ -1,6 +1,17 @@
 <template>
     <b-container class="bv-example-row">
         <b-row>
+            <b-col>
+                <h2 class="h2-style">
+                    Die Erfolge der Digitalisierung
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                </p>
+            </b-col>
+        </b-row>
+        <b-row>
             <b-col class="svg">
                 <svg xmlns="http://www.w3.org/2000/svg" id="mysvg" viewBox="0 0 1572.44 825.69">
                     <title>Element 7_1</title>
@@ -117,7 +128,8 @@
                             </g>
 
                             <g id="Gruppe_163" class="gruppe" data-name="Gruppe 163">
-                                <ellipse id="Ellipse_378-2" data-name="Ellipse 378-2" class="cls-8" cx="578.43" cy="568.15" rx="146.24" ry="150.13" />
+                                <ellipse id="Ellipse_378-2" data-name="Ellipse 378-2" class="cls-8" cx="578.43"
+                                    cy="568.15" rx="146.24" ry="150.13" />
                                 <path id="Markt_Kundengruppe-2" data-name="Markt Kundengruppe" class="cls-9"
                                     d="M630.3,582V553.45a4.63,4.63,0,0,0-.42-1.93,5,5,0,0,0-4.92-3.69,4.89,4.89,0,1,1,5.08-4.89,5.09,5.09,0,0,0,10.18,0A15,15,0,0,0,625,528.28a15.57,15.57,0,0,0-10.64,4.17l-21.45-10c0-.35,0-.69,0-1a15.27,15.27,0,0,0-30.52,0c0,.39,0,.76.05,1.14l-21.53,9.79a15.57,15.57,0,0,0-10.56-4.09,15,15,0,0,0-15.26,14.66A14.71,14.71,0,0,0,525,556.68V582a14.7,14.7,0,0,0-9.92,13.73,15,15,0,0,0,15.26,14.67A15.57,15.57,0,0,0,541,606.18L562.45,616c0,.4-.05.8-.05,1.21a15,15,0,0,0,15.26,14.66,4.89,4.89,0,1,0,.39-9.77h-.39a4.89,4.89,0,1,1,5.08-4.89,5.09,5.09,0,0,0,10.18,0c0-.44,0-.88-.07-1.31l21.5-9.67A15.49,15.49,0,0,0,625,610.4a4.89,4.89,0,1,0,.39-9.77H625a4.89,4.89,0,1,1,5.09-4.89,5.09,5.09,0,0,0,10.17,0A14.71,14.71,0,0,0,630.3,582Zm-52.65-65.45a5,5,0,0,1,5.09,4.89,5.09,5.09,0,0,1-10.18,0A5,5,0,0,1,577.65,516.55Zm-47.3,21.51a4.89,4.89,0,0,1,.39,9.77h-.39a4.89,4.89,0,1,1-.39-9.77Zm0,62.56a4.89,4.89,0,1,1-.39-9.77h.39a4.89,4.89,0,0,1,.39,9.77Zm79.34-4.89a13.2,13.2,0,0,0,.12,1.78l-21.2,9.54a15.65,15.65,0,0,0-22,.07L545.5,597.4a13.25,13.25,0,0,0,.1-1.67,14.76,14.76,0,0,0-10.43-13.9v-25a14.76,14.76,0,0,0,10.43-13.91,14.07,14.07,0,0,0-.13-1.83l21.1-9.6a15.64,15.64,0,0,0,22.13,0l.08-.08,21,9.77a14.52,14.52,0,0,0-.11,1.74,14.75,14.75,0,0,0,10.43,13.9v25A14.76,14.76,0,0,0,609.69,595.73Zm-17-35v-4.06c0-8-6.84-14.41-15.26-14.41s-15.26,6.47-15.26,14.41v4.07a12.2,12.2,0,0,0-7.37,11.08v17.35a5,5,0,0,0,5.08,4.89H595a5,5,0,0,0,5.08-4.89V571.78A12.21,12.21,0,0,0,592.65,560.69ZM577.39,552a4.89,4.89,0,0,1,5.09,4.64v2.93H572.31v-2.93A4.88,4.88,0,0,1,577.39,552Zm12.47,32.26H564.93V571.78a2.49,2.49,0,0,1,2.55-2.44h19.84a2.49,2.49,0,0,1,2.54,2.44Z" />
                                 <text class="cls-11" transform="translate(485.65 517.35)">
@@ -142,7 +154,7 @@
         name: 'erfolge',
         props: {
             msg: String,
-           
+
         },
         data() {
             return {
@@ -152,28 +164,31 @@
             }
         },
         mounted() {
-               document.getElementById("Ellipse_462").setAttribute("r", "0");
-                document.getElementById("Ellipse_449").setAttribute("r", "0");
-                 document.getElementById("Ellipse_449").setAttribute("r", "0");
 
-                   document.getElementById("Ellipse_448").setAttribute("r", "0");
-                   document.getElementById("Ellipse_455").setAttribute("r", "0");
-                   document.getElementById("Ellipse_457").setAttribute("r", "0");
-                   document.getElementById("Ellipse_449").setAttribute("r", "0");
-                   document.getElementById("Ellipse_4464").setAttribute("r", "0");
-                   document.getElementById("Ellipse_463").setAttribute("r", "0");
-                   document.getElementById("Ellipse_460").setAttribute("r", "0");
-                   document.getElementById("Ellipse_459").setAttribute("r", "0");
-                   document.getElementById("Ellipse_458").setAttribute("r", "0");
-                   document.getElementById("Ellipse_452").setAttribute("r", "0");
-                   document.getElementById("Ellipse_451").setAttribute("r", "0");
-                   document.getElementById("Ellipse_450").setAttribute("r", "0");
-                   document.getElementById("Ellipse_453").setAttribute("r", "0");
-                   // document.getElementById("Pfad_2445").setAttribute("class", "cls-1 pfad_empty");
+            window.console.log(document.getElementsByTagName('circle'))
+
+            document.getElementById("Ellipse_462").setAttribute("r", "0.1");
+            document.getElementById("Ellipse_449").setAttribute("r", "0.1");
+            document.getElementById("Ellipse_449").setAttribute("r", "0.1");
+
+            document.getElementById("Ellipse_448").setAttribute("r", "0.1");
+            document.getElementById("Ellipse_455").setAttribute("r", "0.1");
+            document.getElementById("Ellipse_457").setAttribute("r", "0.1");
+            document.getElementById("Ellipse_449").setAttribute("r", "0.1");
+            document.getElementById("Ellipse_464").setAttribute("r", "0.1");
+            document.getElementById("Ellipse_463").setAttribute("r", "0.1");
+            document.getElementById("Ellipse_460").setAttribute("r", "0.1");
+            document.getElementById("Ellipse_459").setAttribute("r", "0.1");
+            document.getElementById("Ellipse_458").setAttribute("r", "0.1");
+            document.getElementById("Ellipse_452").setAttribute("r", "0.1");
+            document.getElementById("Ellipse_451").setAttribute("r", "0.1");
+            document.getElementById("Ellipse_450").setAttribute("r", "0.1");
+            document.getElementById("Ellipse_453").setAttribute("r", "0.1");
+            // document.getElementById("Pfad_2445").setAttribute("class", "cls-1 pfad_empty");
         },
         methods: {
-            animStart() {
-                
+           animStart() {
+ 
                 // console.log(document.getElementById("Pfad_2445").class )
 
                 document.getElementById("Pfad_2449").setAttribute("class", "cls-1 pfad");
@@ -183,30 +198,27 @@
                 document.getElementById("Pfad_2445").setAttribute("class", "cls-1 pfad");
 
                 window.setTimeout(() => {
-
-
-                   document.getElementById("Ellipse_449").setAttribute("r", "13.59");
-
-                   document.getElementById("Ellipse_462").setAttribute("r", "19.41");
-                   document.getElementById("Ellipse_448").setAttribute("r", "19.41");
-                   document.getElementById("Ellipse_455").setAttribute("r", "19.41");
-                   document.getElementById("Ellipse_457").setAttribute("r", "19.41");
-                   document.getElementById("Ellipse_449").setAttribute("r", "13.59");
-                   document.getElementById("Ellipse_4464").setAttribute("r", "13.59");
-                   document.getElementById("Ellipse_463").setAttribute("r", "13.59");
-                   document.getElementById("Ellipse_460").setAttribute("r", "13.59");
-                   document.getElementById("Ellipse_459").setAttribute("r", "13.59");
-                   document.getElementById("Ellipse_458").setAttribute("r", "13.59");
-                   document.getElementById("Ellipse_452").setAttribute("r", "59.53");
-                   document.getElementById("Ellipse_451").setAttribute("r", "59.53");
-                   document.getElementById("Ellipse_450").setAttribute("r", "59.53");
-                   document.getElementById("Ellipse_453").setAttribute("r", "59.53");
+                    document.getElementById("Ellipse_449").setAttribute("r", "13.59");
+                    document.getElementById("Ellipse_462").setAttribute("r", "19.41");
+                    document.getElementById("Ellipse_448").setAttribute("r", "19.41");
+                    document.getElementById("Ellipse_455").setAttribute("r", "19.41");
+                    document.getElementById("Ellipse_457").setAttribute("r", "19.41");
+                    document.getElementById("Ellipse_449").setAttribute("r", "13.59");
+                    document.getElementById("Ellipse_464").setAttribute("r", "13.59");
+                    document.getElementById("Ellipse_463").setAttribute("r", "13.59");
+                    document.getElementById("Ellipse_460").setAttribute("r", "13.59");
+                    document.getElementById("Ellipse_459").setAttribute("r", "13.59");
+                    document.getElementById("Ellipse_458").setAttribute("r", "13.59");
+                    document.getElementById("Ellipse_452").setAttribute("r", "59.53");
+                    document.getElementById("Ellipse_451").setAttribute("r", "59.53");
+                    // document.getElementById("Ellipse_450").setAttribute("r", "59.53");
+                    document.getElementById("Ellipse_453").setAttribute("r", "59.53");
                 }, 1000)
 
 
-                
-    
 
+
+ 
             }
         },
     }
@@ -234,52 +246,66 @@
         }
     }
 
-    #Ellipse_462, #Ellipse_449, #Pfad_2445, .cls-4, .cls-5 {
+    #Ellipse_462,
+    #Ellipse_449,
+    #Pfad_2445,
+    .cls-4,
+    .cls-5 {
         transition: 3000ms ease-in-out;
     }
 
     .pfad {
         stroke-dasharray: 1000;
         stroke-dashoffset: 1000;
-        animation: build 6s  ease-in-out forwards;
+        animation: build 6s ease-in-out forwards;
     }
 
     .pfad_empty {
-     stroke-dasharray: 0;
+        stroke-dasharray: 0;
         stroke-dashoffset: 0;
     }
-    
+
     #Pfad_2444 {
         stroke-dasharray: 3000;
         stroke-dashoffset: 3000;
         animation: build2 4s 1s ease-in-out forwards;
     }
 
-    
+    svg {
+        margin-top: 60px;
+        transition: 3000ms ease-in-out;
 
-    .gruppe {overflow:hidden;}
+    }
 
-    .gruppe:hover > text, .gruppe:hover > line {
+    .gruppe {
+        overflow: hidden;
+    }
+
+    .gruppe:hover>text,
+    .gruppe:hover>line {
         opacity: 1;
     }
 
-    .gruppe:hover > .cls-9 {
+    .gruppe:hover>.cls-9 {
         opacity: 0;
     }
 
-   .gruppe text, .gruppe line{
-       opacity: 0;
-   }
+    .gruppe text,
+    .gruppe line {
+        opacity: 0;
+    }
 
-   .cls-9, .gruppe text, .gruppe line {
+    .cls-9,
+    .gruppe text,
+    .gruppe line {
         transition: 300ms ease-in-out;
-       transition-property: opacity;
-       transition-delay: 200ms;
-   } 
+        transition-property: opacity;
+        transition-delay: 200ms;
+    }
 
 
 
-   
+
 
 
     .cls-1,

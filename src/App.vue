@@ -134,6 +134,17 @@ $gradient-color-end: #DFEDF4;
     text-transform: uppercase;
   }
 
+  .h2-style {
+    font-size: 40pt
+      /* Original Entwurf war 55pt */
+    ;
+    color: #00071F;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 100px 0 60px 0;
+  }
+
   .primary {
     background: red;
   }
