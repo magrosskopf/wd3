@@ -34,7 +34,7 @@
       <div class="section 02 gradient-end ">
         <b-container class="bv-example-row">
           <b-row>
-         
+            section 2
           </b-row>
         </b-container>
       </div>
@@ -95,12 +95,8 @@
     },
     methods: {
         onLeave(origin, destination) {
-          console.log(destination.anchor.indexOf("03"));
               var child = this.$refs.erfolge;
-          
-          if(destination.anchor.indexOf("03") === 0 && this.locked3 == true) {
-              console.log("destination");
-
+          if(destination.anchor.indexOf("03") === 0 && this.locked3 === true) {
               child.animStart();
           }
         }
@@ -126,7 +122,6 @@ $gradient-color-end: #DFEDF4;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
-    margin-top: 60px;
   }
 
   .h1-style {
@@ -156,7 +151,11 @@ $gradient-color-end: #DFEDF4;
   }
 
   .header-image {
-    margin-top: -100px;
+    margin-top: -40px;
+  }
+
+  .section {
+    box-sizing: border-box;
   }
 
   #fp-nav {

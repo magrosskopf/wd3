@@ -152,7 +152,6 @@
             }
         },
         mounted() {
-            console.log('xd')
                document.getElementById("Ellipse_462").setAttribute("r", "0");
                 document.getElementById("Ellipse_449").setAttribute("r", "0");
                  document.getElementById("Ellipse_449").setAttribute("r", "0");
@@ -256,9 +255,7 @@
         animation: build2 4s 1s ease-in-out forwards;
     }
 
-    .svg {
-        margin: 25% 0;
-    }
+    
 
     .gruppe {overflow:hidden;}
 
