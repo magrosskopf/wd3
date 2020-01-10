@@ -32,13 +32,7 @@
         </b-container>
       </div>
       <div class="section section2 gradient-end ">
-        <b-container class="bv-example-row">
-          <b-row>
-            <b-col>1 of 3</b-col>
-            <b-col>2 of 3</b-col>
-            <b-col>3 of 3</b-col>
-          </b-row>
-        </b-container>
+        <impressum></impressum>
       </div>
     </full-page>
 
@@ -46,12 +40,13 @@
 </template>
 
 <script>
-  // import titlepage from './components/titlepage.vue'
+  import impressum from './components/impressum.vue'
 
   export default {
     name: 'app',
     components: {
       // titlepage
+      impressum
     },
     data() {
       return {
@@ -83,7 +78,6 @@ $gradient-color-end: #DFEDF4;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
-    margin-top: 60px;
   }
 
   .h1-style {
