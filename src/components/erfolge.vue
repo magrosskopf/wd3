@@ -165,25 +165,20 @@
         },
         mounted() {
 
-            window.console.log(document.getElementsByTagName('circle'))
-
-            document.getElementById("Ellipse_462").setAttribute("r", "0.1");
-            document.getElementById("Ellipse_449").setAttribute("r", "0.1");
-            document.getElementById("Ellipse_449").setAttribute("r", "0.1");
-
-            document.getElementById("Ellipse_448").setAttribute("r", "0.1");
-            document.getElementById("Ellipse_455").setAttribute("r", "0.1");
-            document.getElementById("Ellipse_457").setAttribute("r", "0.1");
-            document.getElementById("Ellipse_449").setAttribute("r", "0.1");
-            document.getElementById("Ellipse_464").setAttribute("r", "0.1");
-            document.getElementById("Ellipse_463").setAttribute("r", "0.1");
-            document.getElementById("Ellipse_460").setAttribute("r", "0.1");
-            document.getElementById("Ellipse_459").setAttribute("r", "0.1");
-            document.getElementById("Ellipse_458").setAttribute("r", "0.1");
-            document.getElementById("Ellipse_452").setAttribute("r", "0.1");
-            document.getElementById("Ellipse_451").setAttribute("r", "0.1");
-            document.getElementById("Ellipse_450").setAttribute("r", "0.1");
-            document.getElementById("Ellipse_453").setAttribute("r", "0.1");
+            document.getElementById("Ellipse_448").setAttribute("r", "0");
+            document.getElementById("Ellipse_462").setAttribute("r", "0");
+            document.getElementById("Ellipse_455").setAttribute("r", "0");
+            document.getElementById("Ellipse_457").setAttribute("r", "0");
+            document.getElementById("Ellipse_449").setAttribute("r", "0");
+            document.getElementById("Ellipse_464").setAttribute("r", "0");
+            document.getElementById("Ellipse_463").setAttribute("r", "0");
+            document.getElementById("Ellipse_460").setAttribute("r", "0");
+            document.getElementById("Ellipse_459").setAttribute("r", "0");
+            document.getElementById("Ellipse_458").setAttribute("r", "0");
+            document.getElementById("Ellipse_450").setAttribute("r", "0");
+            document.getElementById("Ellipse_451").setAttribute("r", "0");
+            document.getElementById("Ellipse_452").setAttribute("r", "0");
+            document.getElementById("Ellipse_453").setAttribute("r", "0");
             // document.getElementById("Pfad_2445").setAttribute("class", "cls-1 pfad_empty");
         },
         methods: {
@@ -211,7 +206,7 @@
                     document.getElementById("Ellipse_458").setAttribute("r", "13.59");
                     document.getElementById("Ellipse_452").setAttribute("r", "59.53");
                     document.getElementById("Ellipse_451").setAttribute("r", "59.53");
-                    // document.getElementById("Ellipse_450").setAttribute("r", "59.53");
+                    document.getElementById("Ellipse_450").setAttribute("r", "59.53");
                     document.getElementById("Ellipse_453").setAttribute("r", "59.53");
                 }, 1000)
 
