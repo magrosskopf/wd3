@@ -3,7 +3,7 @@
 
 
     <full-page ref="fullpage" :options="options" id="fullpage">
-      <div class="section gradient-start ">
+      <div class="section 01 gradient-start ">
        
           <img src="@/assets/Element 2a.svg" width="80%" class="header-image" />
         
@@ -52,7 +52,7 @@
       return {
         options: {
           navigation: true,
-          anchors: ['section', 'section2', 'page3']
+          anchors: ['01', '02', '03', '04', '05', '06']
            
         }
       }
@@ -61,7 +61,7 @@
 </script>
 
 <style>
-  /* 
+ /*
 
 $primary-color: #00071F;
 
@@ -90,8 +90,23 @@ $gradient-color-end: #DFEDF4;
     text-transform: uppercase;
   }
 
+  .h2-style {
+    font-size: 40pt
+      /* Original Entwurf war 55pt */
+    ;
+    color: #00071F;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 100px 0 60px 0;
+  }
+
   .primary {
     background: red;
+  }
+
+  .bg-blue {
+    background: #DFEDF4;
   }
 
   .gradient-start {
@@ -103,13 +118,54 @@ $gradient-color-end: #DFEDF4;
   }
 
   .header-image {
-    margin-top: -100px;
+    margin-top: -40px;
+  }
+
+  .section {
+    box-sizing: border-box;
   }
 
   #fp-nav {
     position: fixed;
-    top: 40%;
+    top: 50%;
     right: 3%;
+  }
 
+  #fp-nav ul {
+    text-align: center;
+  }
+
+  #fp-nav ul li {
+    list-style: none;
+  }
+
+  #fp-nav ul li:after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 45px;
+    background: #00071F;
+    margin: 6px 0 6px 12px;
+  }
+
+  #fp-nav ul li:after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 45px;
+    background: #00071F;
+    margin: 6px 0 6px 12px;
+  }
+
+  #fp-nav ul li:nth-child(6):after {
+    content: "";
+    display: none;
+  }
+
+  #fp-nav ul li a{
+    text-decoration: none;
+    color: #00071F;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 400;
   }
 </style>
