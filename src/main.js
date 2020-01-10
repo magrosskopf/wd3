@@ -4,7 +4,7 @@ import VueFullPage from 'vue-fullpage.js'
 import BootstrapVue from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
-
+// import barchart from "d3";
 
 Vue.config.productionTip = false
 
