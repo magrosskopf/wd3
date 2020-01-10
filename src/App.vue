@@ -1,38 +1,21 @@
 <template>
   <div id="app">
-  
-
-  <full-page ref="fullpage" :options="options" id="fullpage">
-    <div class="section">
-    </div>
-    <div class="section section2">
-      <b-container class="bv-example-row">
-        <b-row>
-          <b-col>1 of 3</b-col>
-          <b-col>2 of 3</b-col>
-          <b-col>3 of 3</b-col>
-        </b-row>
-      </b-container>
-    </div>
-  </full-page>
-   
+    <lollipop/>
   </div>
 </template>
 
 <script>
 // import titlepage from './components/titlepage.vue'
+import lollipop from './components/Lollipop'
 
 export default {
   name: 'app',
   components: {
-    // titlepage
+    lollipop
   },
   data(){
     return {
-      option: {
-        anchors: ['section', 'section2', 'page3'],
-        sectionsColor: ['#41b883', '#ff5f45']
-      }
+      lollipop
     }
   }
 }
