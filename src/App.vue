@@ -56,11 +56,7 @@
         </b-container>
       </div>
       <div class="section 06 ">
-        <b-container class="bv-example-row">
-          <b-row>
-         
-          </b-row>
-        </b-container>
+        <impressum></impressum>
       </div>
     </full-page>
 
@@ -69,11 +65,14 @@
 
 <script>
   import informationen from './components/informationen.vue'
+  import impressum from './components/impressum.vue'
+
 
   export default {
     name: 'app',
     components: {
-      informationen
+      informationen,
+      impressum
     },
     data() {
       return {
