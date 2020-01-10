@@ -48,7 +48,7 @@
           </b-row>
         </b-container>
       </div>
-       <div class="section 05 ">
+       <div class="section 05 bg-darkblue">
         <b-container class="bv-example-row">
           <b-row>
          
@@ -149,6 +149,10 @@ $gradient-color-end: #DFEDF4;
 
   .bg-blue {
     background: #DFEDF4;
+  }
+
+  .bg-darkblue {
+    background: #08164A;
   }
 
   .gradient-start {
