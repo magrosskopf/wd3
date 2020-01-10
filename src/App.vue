@@ -31,33 +31,50 @@
           </b-row>
         </b-container>
       </div>
+
       <div class="section 02 gradient-end">
         <informationen></informationen>
       </div>
+
       <div class="section 03 bg-blue">
         <b-container class="bv-example-row">
           <b-row>
-         
           </b-row>
         </b-container>
       </div>
-       <div class="section 04 ">
+
+       <div class="section 04">
         <b-container class="bv-example-row">
           <b-row>
-         
           </b-row>
         </b-container>
       </div>
+
        <div class="section 05 bg-darkblue">
         <b-container class="bv-example-row">
           <b-row>
-         
           </b-row>
         </b-container>
       </div>
-      <div class="section 06 gradient-end">
+
+      <div class="section 06 bg-darkblue">
+        <b-container class="bv-example-row">
+          <b-row>
+          </b-row>
+        </b-container>
+      </div>
+
+      <div class="section 07">
+        <b-container class="bv-example-row">
+          <b-row>
+          </b-row>
+        </b-container>
+      </div>
+
+      <div class="section 08 gradient-end">
         <impressum></impressum>
       </div>
+
     </full-page>
 
   </div>
