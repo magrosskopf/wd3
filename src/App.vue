@@ -42,11 +42,7 @@
         </b-container>
       </div>
        <div class="section 04 ">
-        <b-container class="bv-example-row">
-          <b-row>
-         
-          </b-row>
-        </b-container>
+        <erfolgedetail></erfolgedetail>
       </div>
        <div class="section 05 ">
         <b-container class="bv-example-row">
@@ -69,11 +65,13 @@
 
 <script>
   import informationen from './components/informationen.vue'
+  import erfolgedetail from './components/erfolgedetail.vue'
 
   export default {
     name: 'app',
     components: {
-      informationen
+      informationen,
+      erfolgedetail
     },
     data() {
       return {
@@ -85,6 +83,8 @@
       }
     }
   }
+
+  
 </script>
 
 <style>
@@ -142,6 +142,10 @@ $gradient-color-end: #DFEDF4;
 
   .p-left {
     text-align: left;
+  }
+
+  .p-right {
+    text-align: right;
   }
 
   .primary {
