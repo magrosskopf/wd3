@@ -31,7 +31,7 @@
           </b-row>
         </b-container>
       </div>
-      <div class="section 02 gradient-end ">
+      <div class="section 02 gradient-end">
         <informationen></informationen>
       </div>
       <div class="section 03 bg-blue">
@@ -55,7 +55,7 @@
           </b-row>
         </b-container>
       </div>
-      <div class="section 06 ">
+      <div class="section 06 gradient-end">
         <impressum></impressum>
       </div>
     </full-page>
