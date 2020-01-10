@@ -144,7 +144,7 @@
 }
 
 .cls-6 {
-  font-family: HelveticaNeue, Helvetica Neue;
+  font-family: OpenSans-Regular, Open Sans;
 }
 
 .cls-7 {
