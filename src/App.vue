@@ -1,21 +1,21 @@
 <template>
   <div id="app">
-    <lollipop/>
+    <vergleichChart />
   </div>
 </template>
 
 <script>
 // import titlepage from './components/titlepage.vue'
-import lollipop from './components/Lollipop'
+import vergleichChart from './components/VergleichChart'
 
 export default {
   name: 'app',
   components: {
-    lollipop
+    vergleichChart
   },
   data(){
     return {
-      lollipop
+      loadData: {}
     }
   }
 }
