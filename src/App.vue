@@ -1,17 +1,20 @@
 <template>
   <div id="app">
-    <vergleichChart />
+    <ErfolgChart />
+    <HemmnisseChart />
   </div>
 </template>
 
 <script>
 // import titlepage from './components/titlepage.vue'
-import vergleichChart from './components/VergleichChart'
+import ErfolgChart from './components/ErfolgChart'
+import HemmnisseChart from './components/HemmnisseChart'
 
 export default {
   name: 'app',
   components: {
-    vergleichChart
+    ErfolgChart,
+    HemmnisseChart
   },
   data(){
     return {
