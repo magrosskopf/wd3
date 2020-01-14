@@ -42,6 +42,25 @@
           color: '#101C4B',
           fontSize: '13px',
           fontFamily: 'Open Sans'
+        },
+        useHTML: true,
+        formatter: function() {
+          // return this.value + '<img style="width:20px; height:20px;" src="../assets/icons/' + this.value.substring(0, 3) + '.svg" />&nbsp<span style="font-weight: normal;vertical-align: super;">';
+          // return this.value + '<img style="width:20px; height:20px;" src="/assets/icons/Che.svg" />';
+
+          return {
+            'Chemie / Pharma': '<img style="width:20px; height:20px;" src="/img/Che.4d991489.svg" />',
+            'Finanzen / Versicherungen': '<img style="width:20px; height:20px;" src="/assets/icons/Che.svg" />',
+            'IKT': '<img style="width:20px; height:20px;" src="/assets/icons/Che.svg" />',
+            'Maschinenbau': '<img style="width:20px; height:20px;" src="/assets/icons/Che.svg" />',
+            'Handel': '<img style="width:20px; height:20px;" src="/assets/icons/Che.svg" />',
+            'Sonstiges verarb. Gewerbe':'<img style="width:20px; height:20px;" src="/assets/icons/Che.svg" />',
+            'Fahrzeugbau': '<img style="width:20px; height:20px;" src="/assets/icons/Che.svg" />',
+            'Gesundheitswesen': '<img style="width:20px; height:20px;" src="/assets/icons/Che.svg" />',
+            'Wissensintens. Dienstleister':'<img style="width:20px; height:20px;" src="/assets/icons/Che.svg" />',
+            'Energie- / Wasserversorgung': '<img style="width:20px; height:20px;" src="/assets/icons/Che.svg" />',
+            'Verkehr / Logistik': '<img style="width:20px; height:20px;" src="/assets/icons/Che.svg" />'
+          }[this.value];
         }
       },
       lineColor: '#143B7C'
@@ -76,11 +95,12 @@
           style: {
             fontSize: '10px',
             color: 'white',
-            textOutline: null
+            textOutline: null,
+            fontFamily: 'Open Sans'
           },
           enabled: true,
           backgroundColor: '#101C4B',
-          borderRadius: 15
+          borderRadius: 30
         }
       }
     },
@@ -89,47 +109,36 @@
     },
     series: [{
         data: [{
-          name: 'Chemie / Pharma',
           y: 81,
           icon: '../assets/icons/01_chemie.svg'
         }, {
-          name: 'Finanzen / Versicherungen',
           y: 80,
           icon: '../assets/icons/02_finanzen.svg'
         }, {
-          name: 'IKT',
           y: 78,
           icon: '../assets/icons/03_ikt.svg'
         }, {
-          name: 'Maschinenbau',
           y: 76,
           icon: '../assets/icons/04_maschinenbau.svg'
         }, {
-          name: 'Handel',
           y: 73,
           icon: '../assets/icons/05_handel.svg'
         }, {
-          name: 'Sonstiges verarb. Gewerbe',
           y: 73,
           icon: '../assets/icons/11_sonstiges.svg'
         }, {
-          name: 'Fahrzeugbau',
           y: 72,
           icon: '../assets/icons/06_fahrzeugbau.svg'
         }, {
-          name: 'Gesundheitswesen',
           y: 67,
           icon: '../assets/icons/07_gesundheitswesen.svg'
         }, {
-          name: 'Wissensintens. Dienstleister',
           y: 66,
           icon: '../assets/icons/08_wissenschaft.svg'
         }, {
-          name: 'Energie- / Wasserversorgung',
           y: 59,
           icon: '../assets/icons/10_energie.svg'
         }, {
-          name: 'Verkehr / Logistik',
           y: 53,
           icon: '../assets/icons/09_logistik.svg'
         }
