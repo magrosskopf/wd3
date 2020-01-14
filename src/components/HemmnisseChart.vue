@@ -1,13 +1,14 @@
 <template>
-  <highcharts :options="options" ref="hemmnisse"></highcharts>
+    <div id="chart">
+        <highcharts :options="options" ref="hemmnisse" id="hemmnisse"></highcharts>
+    </div>
 </template>
 
 <script>
 const data = {
     chart: {
       inverted: true,
-      height: 100 + '%',
-      width: 800
+      backgroundColor: '#08164A'
     },
 
     data: {
@@ -15,37 +16,55 @@ const data = {
     },
 
     title: {
-        text: 'Hemmnisse'
+        text: ''
     },
 
     legend: {
         enabled: false
     },
 
+    credits: {
+        enabled: false
+    },
+
     xAxis: {
         categories: [
-          'Kundenkommunikation',
-          'Wissensaufbau',
-          'Qualitätsverbesserung',
-          'Innovationsfähigkeit',
-          'Markt & Kundengruppe',
-          'Kostensenkung',
-          'Wettbewerbsvorteil',
-          'Neue digitale Dienste',
-          'Neue Produkte',
-          'Neue Geschäftsmodelle'
-        ]
+          'Breitbandnetz',
+          'Zeitaufwand',
+          'Know-How',
+          'Investitionsbedarf',
+          'Datenschutzregeln',
+          'IT-Sicherheit',
+          'Standards',
+          'IT-Fachkräfte',
+          'Notwendigkeit',
+          'Unternehmensstrategie',
+          'Zuständigkeit'
+        ],
+        labels: {
+            style: {
+                color: 'white',
+                fontSize: '11px',
+                fontFamily: 'Open Sans'
+            }
+        },
+        opposite: true
     },
 
     yAxis: {
         labels: {
-            formatter: function () {
-                return this.value + '%';
+            style: {
+                color: 'white',
+                fontSize: '11px',
+                fontFamily: 'Open Sans'
             }
         },
         min: 0,
         max: 100,
-        tickInterval: 25
+        tickInterval: 25,
+        title: {
+            text: ''
+        }
     },
     tooltip: {
         crosshairs: true,
@@ -54,68 +73,111 @@ const data = {
     plotOptions: {
         series: {
             marker: {
-                radius: 4,
-                lineColor: '#666666',
-                lineWidth: 1
+                radius: 5,
+                lineWidth: 1,
+                lineColor: null,
+                symbol: 'circle'
             }
         }
     },
     series: [{
-        id: '1',
+        id: 'chemie',
         name: 'Chemie / Pharma',
-        data: [81,62,54,50,52,61,39,26,25,20]
+        data: [41,38,38,40,36,24,31,32,26,21,16],
+        color: '#d34994',
+        visible: true
     }, {
-        id: '2',
+        id: 'finanzen',
         name: 'Finanzen / Versicherungen',
-        data: [80,69,62,70,53,51,54,54,28,20]
+        data: [49,56,39,27,58,27,42,35,4,26,23],
+        color: '#ded01e',
+        visible: false
     }, {
-        id: '3',
+        id: 'ikt',
         name: 'IKT',
-        data: [78,59,72,64,57,41,58,57,53,38]
+        data: [58,25,20,28,29,21,27,46,11,18,13],
+        color: '#4da1b1',
+        visible: true
     }, {
-        id: '4',
+        id: 'maschinenbau',
         name: 'Maschinenbau',
-        data: [76,49,56,64,61,63,39,27,28,20]
+        data: [68,25,41,36,29,41,40,41,15,26,17],
+        color: '#6b6e72',
+        visible: false
     }, {
-        id: '5',
+        id: 'handel',
         name: 'Handel',
-        data: [73,54,50,55,63,36,38,40,26,26]
+        data: [51,36,34,40,34,28,28,34,31,22,26],
+        color: '#62a955',
+        visible: false
     }, {
-        id: '6',
+        id: 'fahrzeugbau',
         name: 'Fahrzeugbau',
-        data: [72,49,40,48,49,45,37,31,26,16]
+        data: [40,35,43,31,30,25,14,33,29,23,24],
+        color: '#116636',
+        visible: false
     }, {
-        id: '7',
+        id: 'gesundheitswesen',
         name: 'Gesundheitswesen',
-        data: [67,50,25,25,20,27,15,15,9,6]
+        data: [33,54,34,23,33,52,28,33,29,8,8],
+        color: '#e14040',
+        visible: false
     }, {
-        id: '8',
+        id: 'wissenschaft',
         name: 'Wissensintens. Dienstleister',
-        data: [66,51,63,39,38,62,35,29,25,23]
+        data: [29,35,39,35,33,35,33,21,13,11,11],
+        color: '#7b61a7',
+        visible: false
     }, {
-        id: '9',
-        name: 'Energie- / Wasserversorgung',
-        data: [59,50,54,54,29,58,21,34,13,9]
-    }, {
-        id: '10',
+        id: 'logistik',
         name: 'Verkehr / Logistik',
-        data: [53,46,38,38,40,28,24,21,17,13]
+        data: [42,42,39,35,37,24,31,40,34,41,15],
+        color: '#8d6e23',
+        visible: false
     }, {
-        id: '11',
+        id: 'energie',
+        name: 'Energie- / Wasserversorgung',
+        data: [50,50,38,46,34,54,30,42,25,29,17],
+        color: '#3a52a0',
+        visible: false
+    }, {
+        id: 'sonstiges',
         name: 'Sonstiges verarb. Gewerbe',
-        data: [73,54,50,52,50,42,57,40,21,24]
+        data: [54,46,40,42,35,26,31,35,30,19,9],
+        color: '#e59d53',
+        visible: true
     }]
 }
 
 
 export default {
-  data () {
-    return {
-      options: data
+    props: {
+        legendChoice: String,
+        changingChoice: Boolean
+    },
+    data () {
+        return {
+            options: data
+        }
+    },
+    watch: { 
+        changingChoice () {
+            this.options.series.forEach(element => {
+                if (element.id === this.legendChoice) {
+                    element.visible = element.visible ? false : true;
+                }
+            });
+        }
     }
-  } 
 } 
 </script>
  <style scoped>
+    div#chart {
+        width: 30vw;
+        margin-left: 5vw;
+    }
 
+    #hemmnisse {
+        height: 60vh;
+    }
  </style>
