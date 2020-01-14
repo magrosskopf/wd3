@@ -41,7 +41,7 @@
           </b-row>
         </b-container>
       </div>
-       <div class="section 04 ">
+       <div class="section 04 bg-blue">
         <b-container class="bv-example-row">
           <b-row>
             <b-col cols="12">
@@ -49,7 +49,7 @@
                 Verbesserung der Kundeninformation
               </h3>
             </b-col>
-            <b-col cols="12">
+            <b-col class="centerChart">
               <lollipop />
             </b-col>
           </b-row>
@@ -175,6 +175,11 @@ $gradient-color-end: #DFEDF4;
 
   .section {
     box-sizing: border-box;
+  }
+  
+  .centerChart {
+    display: flex;
+    justify-content: center;
   }
 
   #fp-nav {
