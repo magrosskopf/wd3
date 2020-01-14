@@ -2,9 +2,9 @@
   <div>
     <b-row>
       <b-col cols="12">
-        <h1 class="h2-style">
+        <h2 class="h2-style">
           Informationen zur Datenbasis
-        </h1>
+        </h2>
       </b-col>
     </b-row>
     <b-row class="mb-5">
