@@ -88,52 +88,51 @@
         enabled: false
     },
     series: [{
-        data: [
-          {
-        name: 'Chemie / Pharma',
-        y: 81,
-        icon: '../assets/'
-    }, {
-        name: 'Finanzen / Versicherungen',
-        y: 80,
-        icon: 'https://github.com/tobi-ajala/shell-exercise/blob/master/icons/shop.png?raw=true'
-    }, {
-        name: 'IKT',
-        y: 78,
-        icon: 'https://github.com/tobi-ajala/shell-exercise/blob/master/icons/shop.png?raw=true'
-    }, {
-        name: 'Maschinenbau',
-        y: 76,
-        icon: 'https://github.com/tobi-ajala/shell-exercise/blob/master/icons/shop.png?raw=true'
-    }, {
-        name: 'Handel',
-        y: 73,
-        icon: 'https://github.com/tobi-ajala/shell-exercise/blob/master/icons/shop.png?raw=true'
-    }, {
-        name: 'Sonstiges verarb. Gewerbe',
-        y: 73,
-        icon: 'https://github.com/tobi-ajala/shell-exercise/blob/master/icons/shop.png?raw=true'
-    }, {
-        name: 'Fahrzeugbau',
-        y: 72,
-        icon: 'https://github.com/tobi-ajala/shell-exercise/blob/master/icons/shop.png?raw=true'
-    }, {
-        name: 'Gesundheitswesen',
-        y: 67,
-        icon: 'https://github.com/tobi-ajala/shell-exercise/blob/master/icons/shop.png?raw=true'
-    }, {
-        name: 'Wissensintens. Dienstleister',
-        y: 66,
-        icon: 'https://github.com/tobi-ajala/shell-exercise/blob/master/icons/shop.png?raw=true'
-    }, {
-        name: 'Energie- / Wasserversorgung',
-        y: 59,
-        icon: 'https://github.com/tobi-ajala/shell-exercise/blob/master/icons/shop.png?raw=true'
-    }, {
-        name: 'Verkehr / Logistik',
-        y: 53,
-        icon: 'https://github.com/tobi-ajala/shell-exercise/blob/master/icons/shop.png?raw=true'
-    }
+        data: [{
+          name: 'Chemie / Pharma',
+          y: 81,
+          icon: '../assets/icons/01_chemie.svg'
+        }, {
+          name: 'Finanzen / Versicherungen',
+          y: 80,
+          icon: '../assets/icons/02_finanzen.svg'
+        }, {
+          name: 'IKT',
+          y: 78,
+          icon: '../assets/icons/03_ikt.svg'
+        }, {
+          name: 'Maschinenbau',
+          y: 76,
+          icon: '../assets/icons/04_maschinenbau.svg'
+        }, {
+          name: 'Handel',
+          y: 73,
+          icon: '../assets/icons/05_handel.svg'
+        }, {
+          name: 'Sonstiges verarb. Gewerbe',
+          y: 73,
+          icon: '../assets/icons/11_sonstiges.svg'
+        }, {
+          name: 'Fahrzeugbau',
+          y: 72,
+          icon: '../assets/icons/06_fahrzeugbau.svg'
+        }, {
+          name: 'Gesundheitswesen',
+          y: 67,
+          icon: '../assets/icons/07_gesundheitswesen.svg'
+        }, {
+          name: 'Wissensintens. Dienstleister',
+          y: 66,
+          icon: '../assets/icons/08_wissenschaft.svg'
+        }, {
+          name: 'Energie- / Wasserversorgung',
+          y: 59,
+          icon: '../assets/icons/10_energie.svg'
+        }, {
+          name: 'Verkehr / Logistik',
+          y: 53,
+          icon: '../assets/icons/09_logistik.svg'
+        }
         ]
     }]
   }
