@@ -44,7 +44,14 @@
        <div class="section 04 ">
         <b-container class="bv-example-row">
           <b-row>
-         
+            <b-col cols="12">
+              <h3 class="h3-style">
+                Verbesserung der Kundeninformation
+              </h3>
+            </b-col>
+            <b-col cols="12">
+              <lollipop />
+            </b-col>
           </b-row>
         </b-container>
       </div>
@@ -69,11 +76,13 @@
 
 <script>
   import informationen from './components/informationen.vue'
+  import lollipop from './components/lollipop.vue'
 
   export default {
     name: 'app',
     components: {
-      informationen
+      informationen,
+      lollipop
     },
     data() {
       return {
