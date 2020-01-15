@@ -31,7 +31,7 @@
           </b-row>
         </b-container>
       </div>
-      <div class="section 02 gradient-end ">
+      <div class="section 02 gradient-end">
         <informationen></informationen>
       </div>
       <div class="section 03 bg-blue">
@@ -48,19 +48,15 @@
           </b-row>
         </b-container>
       </div>
-       <div class="section 05 ">
+       <div class="section 05 bg-darkblue">
         <b-container class="bv-example-row">
           <b-row>
          
           </b-row>
         </b-container>
       </div>
-      <div class="section 06 ">
-        <b-container class="bv-example-row">
-          <b-row>
-         
-          </b-row>
-        </b-container>
+      <div class="section 06 gradient-end">
+        <impressum></impressum>
       </div>
     </full-page>
 
@@ -69,11 +65,14 @@
 
 <script>
   import informationen from './components/informationen.vue'
+  import impressum from './components/impressum.vue'
+
 
   export default {
     name: 'app',
     components: {
-      informationen
+      informationen,
+      impressum
     },
     data() {
       return {
@@ -88,7 +87,7 @@
 </script>
 
 <style>
- /* 
+ /*
 
 $primary-color: #00071F;
 
@@ -150,6 +149,10 @@ $gradient-color-end: #DFEDF4;
 
   .bg-blue {
     background: #DFEDF4;
+  }
+
+  .bg-darkblue {
+    background: #08164A;
   }
 
   .gradient-start {
