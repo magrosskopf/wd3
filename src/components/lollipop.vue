@@ -49,17 +49,17 @@
           // return this.value + '<img style="width:20px; height:20px;" src="/assets/icons/Che.svg" />';
 
           return {
-            'Chemie / Pharma': '<img style="width:20px; height:20px;" src="/img/Che.4d991489.svg" />',
-            'Finanzen / Versicherungen': '<img style="width:20px; height:20px;" src="/assets/icons/Che.svg" />',
-            'IKT': '<img style="width:20px; height:20px;" src="/assets/icons/Che.svg" />',
-            'Maschinenbau': '<img style="width:20px; height:20px;" src="/assets/icons/Che.svg" />',
-            'Handel': '<img style="width:20px; height:20px;" src="/assets/icons/Che.svg" />',
-            'Sonstiges verarb. Gewerbe':'<img style="width:20px; height:20px;" src="/assets/icons/Che.svg" />',
-            'Fahrzeugbau': '<img style="width:20px; height:20px;" src="/assets/icons/Che.svg" />',
-            'Gesundheitswesen': '<img style="width:20px; height:20px;" src="/assets/icons/Che.svg" />',
-            'Wissensintens. Dienstleister':'<img style="width:20px; height:20px;" src="/assets/icons/Che.svg" />',
-            'Energie- / Wasserversorgung': '<img style="width:20px; height:20px;" src="/assets/icons/Che.svg" />',
-            'Verkehr / Logistik': '<img style="width:20px; height:20px;" src="/assets/icons/Che.svg" />'
+            'Chemie / Pharma': this.value + '<img style="width:30px; height:30px; margin: 0 15px 0 30px" src="/img/01_chemie.4d991489.svg" />',
+            'Finanzen / Versicherungen': this.value + '<img style="width:30px; height:30px; margin: 0 15px 0 30px" src="/img/02_finanzen.491a13a4.svg" />',
+            'IKT': this.value + '<img style="width:30px; height:30px; margin: 0 15px 0 30px" src="/img/03_ikt.b2b7a466.svg" />',
+            'Maschinenbau': this.value + '<img style="width:30px; height:30px; margin: 0 15px 0 30px" src="/img/04_maschinenbau.6fda5282.svg" />',
+            'Handel': this.value + '<img style="width:30px; height:30px; margin: 0 15px 0 30px" src="/img/05_handel.a211bab3.svg" />',
+            'Sonstiges verarb. Gewerbe': this.value + '<img style="width:30px; height:30px; margin: 0 15px 0 30px" src="/img/11_sonstiges.7f5f6765.svg" />',
+            'Fahrzeugbau': this.value + '<img style="width:30px; height:30px; margin: 0 15px 0 30px" src="/img/06_fahrzeugbau.835ad3d2.svg" />',
+            'Gesundheitswesen': this.value + '<img style="width:30px; height:30px; margin: 0 15px 0 30px" src="/img/07_gesundheitswesen.28139168.svg" />',
+            'Wissensintens. Dienstleister': this.value + '<img style="width:30px; height:30px; margin: 0 15px 0 30px" src="/img/08_wissenschaft.ca62d138.svg" />',
+            'Energie- / Wasserversorgung': this.value + '<img style="width:30px; height:30px; margin: 0 15px 0 30px" src="/img/09_logistik.a8d67c0a.svg" />',
+            'Verkehr / Logistik': this.value + '<img style="width:30px; height:30px; margin: 0 15px 0 30px" src="/img/10_energie.e7583a15.svg" />'
           }[this.value];
         }
       },
