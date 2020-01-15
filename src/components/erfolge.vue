@@ -28,12 +28,12 @@
                             <path id="Pfad_2445" data-name="Pfad 2445" class="cls-1"
                                 d="M13.59,642.56l50.17-59L181.19,469.22l177.3-238.47L577.2,93,726.89,14.63" />
                             <g id="Ellipse_447" data-name="Ellipse 447">
-                                <circle class="cls-2" cx="60.18" cy="585.62" r="31.71" />
-                                <circle class="cls-3" cx="60.18" cy="585.62" r="29.12" />
+                                <circle class="cls-2" id="Ellipse_447a" cx="60.18" cy="585.62" r="31.71" />
+                                <circle class="cls-3" id="Ellipse_447b" cx="60.18" cy="585.62" r="29.12" />
                             </g>
                             <g id="Ellipse_461" data-name="Ellipse 461">
-                                <circle class="cls-2" cx="1109.77" cy="84.77" r="31.71" />
-                                <circle class="cls-3" cx="1109.77" cy="84.77" r="29.12" />
+                                <circle class="cls-2" id="Ellipse_461a" cx="1109.77" cy="84.77" r="31.71" />
+                                <circle class="cls-3" id="Ellipse_461b" cx="1109.77" cy="84.77" r="29.12" />
                             </g>
                             <g id="Ellipse_454" data-name="Ellipse 454">
                                 <circle class="cls-2" cx="111.95" cy="126.18" r="31.71" />
@@ -166,6 +166,7 @@
         mounted() {
 
             document.getElementById("Ellipse_448").setAttribute("r", "0");
+
             document.getElementById("Ellipse_462").setAttribute("r", "0");
             document.getElementById("Ellipse_455").setAttribute("r", "0");
             document.getElementById("Ellipse_457").setAttribute("r", "0");
@@ -180,37 +181,112 @@
             document.getElementById("Ellipse_452").setAttribute("r", "0");
             document.getElementById("Ellipse_453").setAttribute("r", "0");
             // document.getElementById("Pfad_2445").setAttribute("class", "cls-1 pfad_empty");
+            // document.getElementById("Pfad_2447").setAttribute("class", "cls-1 pfad_empty");
+
         },
         methods: {
            animStart() {
  
                 // console.log(document.getElementById("Pfad_2445").class )
 
-                document.getElementById("Pfad_2449").setAttribute("class", "cls-1 pfad");
-                document.getElementById("Pfad_2448").setAttribute("class", "cls-1 pfad");
-                document.getElementById("Pfad_2447").setAttribute("class", "cls-1 pfad");
-                document.getElementById("Pfad_2446").setAttribute("class", "cls-1 pfad");
-                document.getElementById("Pfad_2445").setAttribute("class", "cls-1 pfad");
+                
 
                 window.setTimeout(() => {
+                    document.getElementById("Pfad_2449").setAttribute("class", "cls-1 pfad");
+                    document.getElementById("Pfad_2448").setAttribute("class", "cls-1 pfadReverse");
+                    document.getElementById("Pfad_2446").setAttribute("class", "cls-1 pfad");
+                    document.getElementById("Pfad_2445").setAttribute("class", "cls-1 pfad");
+                    document.getElementById("Pfad_2444").setAttribute("class", "cls-1 pfad2");
+                    document.getElementById("Pfad_2447").setAttribute("class", "cls-1 pfad_slow");
+
+                    document.getElementById("Gruppe_159").setAttribute("class", "fadeIn gruppe");
+                    document.getElementById("Gruppe_161").setAttribute("class", "fadeIn gruppe");
+                    document.getElementById("Gruppe_160").setAttribute("class", "fadeIn gruppe");
+                    document.getElementById("Gruppe_162").setAttribute("class", "fadeIn gruppe");
+                    document.getElementById("Gruppe_163").setAttribute("class", "fadeIn gruppe");
+
+
                     document.getElementById("Ellipse_449").setAttribute("r", "13.59");
-                    document.getElementById("Ellipse_462").setAttribute("r", "19.41");
-                    document.getElementById("Ellipse_448").setAttribute("r", "19.41");
                     document.getElementById("Ellipse_455").setAttribute("r", "19.41");
-                    document.getElementById("Ellipse_457").setAttribute("r", "19.41");
-                    document.getElementById("Ellipse_449").setAttribute("r", "13.59");
-                    document.getElementById("Ellipse_464").setAttribute("r", "13.59");
+
+                   
+
+                    
+
+                    
+
+
+
+
+                    
+
+                    // document.getElementById("Ellipse_449").setAttribute("r", "13.59");
+                }, 200)
+                window.setTimeout(() => {
+                    document.getElementById("Ellipse_448").setAttribute("r", "19.41");
+                    document.getElementById("Ellipse_447").setAttribute("class", "opacity1");
+                    // TODO: Ellipse_447
+
+                }, 300)
+
+                window.setTimeout(() => {
+                    document.getElementById("Ellipse_462").setAttribute("r", "19.41");
+                    document.getElementById("Ellipse_461").setAttribute("class", "opacity1");
+                    //TODO: Ellipse_461
+
+                }, 750)
+
+
+                window.setTimeout(() => {
                     document.getElementById("Ellipse_463").setAttribute("r", "13.59");
-                    document.getElementById("Ellipse_460").setAttribute("r", "13.59");
-                    document.getElementById("Ellipse_459").setAttribute("r", "13.59");
-                    document.getElementById("Ellipse_458").setAttribute("r", "13.59");
-                    document.getElementById("Ellipse_452").setAttribute("r", "59.53");
-                    document.getElementById("Ellipse_451").setAttribute("r", "59.53");
-                    document.getElementById("Ellipse_450").setAttribute("r", "59.53");
-                    document.getElementById("Ellipse_453").setAttribute("r", "59.53");
+                    
+
                 }, 1000)
 
+                window.setTimeout(() => {
+                    document.getElementById("Ellipse_450").setAttribute("r", "59.53");
+                    document.getElementById("Ellipse_452").setAttribute("r", "59.53");
 
+
+
+                }, 1200) 
+
+                window.setTimeout(() => {
+                    document.getElementById("Ellipse_464").setAttribute("r", "13.59");
+
+                    
+                }, 1500) 
+                window.setTimeout(() => {
+                    document.getElementById("Ellipse_453").setAttribute("r", "59.53");
+           
+                    
+                }, 2000)    
+
+                window.setTimeout(() => {
+                    document.getElementById("Ellipse_451").setAttribute("r", "59.53");
+
+                    document.getElementById("Ellipse_457").setAttribute("r", "19.41");
+                    document.getElementById("Ellipse_456").setAttribute("class", "opacity1");
+
+                    //TODO: Ellipse_456
+                }, 1700) 
+                window.setTimeout(() => {
+                    document.getElementById("Ellipse_460").setAttribute("r", "13.59");
+
+                    document.getElementById("Ellipse_458").setAttribute("r", "13.59");
+
+                    
+
+                }, 1800) 
+
+                window.setTimeout(() => {
+                    document.getElementById("Ellipse_459").setAttribute("r", "13.59");
+                   
+                }, 1850) 
+
+                window.setTimeout(() => {
+                    
+               }, 2300) 
 
 
  
@@ -241,18 +317,68 @@
         }
     }
 
+    @keyframes build3 {
+        0% {
+            stroke-dashoffset: 1000;
+        }
+
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+
+    .opacity1 {
+        opacity: 1 !important;
+    }
+
+    #Ellipse_456, #Ellipse_461, #Ellipse_447 {
+        opacity: 0;
+        transition: 1500ms;
+    }
+
     #Ellipse_462,
     #Ellipse_449,
     #Pfad_2445,
+    .pfad, 
+    .cls-2,
+    .cls-3
     .cls-4,
     .cls-5 {
-        transition: 3000ms ease-in-out;
+        transition: 1500ms ease-in-out;
+    }
+
+    #Gruppe_159 {
+        transition-delay: 600ms;
+    }
+    #Gruppe_163 {
+        transition-delay: 900ms;
+    }
+    #Gruppe_161 {
+        transition-delay: 1300ms;
+    }
+    #Gruppe_162 {
+        transition-delay: 1500ms;
+    }
+    #Gruppe_160 {
+        transition-delay: 1900ms;
     }
 
     .pfad {
         stroke-dasharray: 1000;
         stroke-dashoffset: 1000;
-        animation: build 6s ease-in-out forwards;
+        animation: build 3s ease-in-out forwards;
+    }
+
+    .pfad_slow {
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+        animation: build 2s 1s ease-in-out forwards;
+    }
+
+    .pfadReverse {
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 0;
+        animation: build3 3s ease-in-out forwards;
     }
 
     .pfad_empty {
@@ -260,20 +386,26 @@
         stroke-dashoffset: 0;
     }
 
-    #Pfad_2444 {
+    .pfad2 {
         stroke-dasharray: 3000;
         stroke-dashoffset: 3000;
-        animation: build2 4s 1s ease-in-out forwards;
+        animation: build2 3s  ease-in-out forwards;
     }
 
     svg {
         margin-top: 60px;
-        transition: 3000ms ease-in-out;
+        transition: 1500ms ease-in-out;
 
     }
 
     .gruppe {
         overflow: hidden;
+        opacity: 0;
+        transition: 600ms;
+    }
+
+    .fadeIn {
+        opacity: 1;
     }
 
     .gruppe:hover>text,
@@ -293,7 +425,7 @@
     .cls-9,
     .gruppe text,
     .gruppe line {
-        transition: 300ms ease-in-out;
+        transition: 600ms ease-in-out;
         transition-property: opacity;
         transition-delay: 200ms;
     }
