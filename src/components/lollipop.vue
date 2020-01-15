@@ -1,6 +1,17 @@
 <template>
   <div id="chart">
     <highcharts :options="options" id="lollipop"></highcharts>
+    <img style="display: none" src="../assets/icons/01_chemie.svg" />
+    <img style="display: none" src="../assets/icons/02_finanzen.svg" />
+    <img style="display: none" src="../assets/icons/03_ikt.svg" />
+    <img style="display: none" src="../assets/icons/04_maschinenbau.svg" />
+    <img style="display: none" src="../assets/icons/05_handel.svg" />
+    <img style="display: none" src="../assets/icons/11_sonstiges.svg" />
+    <img style="display: none" src="../assets/icons/06_fahrzeugbau.svg" />
+    <img style="display: none" src="../assets/icons/07_gesundheitswesen.svg" />
+    <img style="display: none" src="../assets/icons/08_wissenschaft.svg" />
+    <img style="display: none" src="../assets/icons/09_logistik.svg" />
+    <img style="display: none" src="../assets/icons/10_energie.svg" />
   </div>
 </template>
 
@@ -58,8 +69,8 @@
             'Fahrzeugbau': this.value + '<img style="width:30px; height:30px; margin: 0 15px 0 30px" src="/img/06_fahrzeugbau.835ad3d2.svg" />',
             'Gesundheitswesen': this.value + '<img style="width:30px; height:30px; margin: 0 15px 0 30px" src="/img/07_gesundheitswesen.28139168.svg" />',
             'Wissensintens. Dienstleister': this.value + '<img style="width:30px; height:30px; margin: 0 15px 0 30px" src="/img/08_wissenschaft.ca62d138.svg" />',
-            'Energie- / Wasserversorgung': this.value + '<img style="width:30px; height:30px; margin: 0 15px 0 30px" src="/img/09_logistik.a8d67c0a.svg" />',
-            'Verkehr / Logistik': this.value + '<img style="width:30px; height:30px; margin: 0 15px 0 30px" src="/img/10_energie.e7583a15.svg" />'
+            'Energie- / Wasserversorgung': this.value + '<img style="width:30px; height:30px; margin: 0 15px 0 30px" src="/img/10_energie.e7583a15.svg" />',
+            'Verkehr / Logistik': this.value + '<img style="width:30px; height:30px; margin: 0 15px 0 30px" src="/img/09_logistik.a8d67c0a.svg" />'
           }[this.value];
         }
       },
@@ -95,8 +106,7 @@
           style: {
             fontSize: '10px',
             color: 'white',
-            textOutline: null,
-            fontFamily: 'Open Sans'
+            textOutline: null
           },
           enabled: true,
           backgroundColor: '#101C4B',
