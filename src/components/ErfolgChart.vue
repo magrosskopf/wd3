@@ -167,8 +167,6 @@ export default {
     },
     watch: { 
         changingChoice () {
-            console.log(this.legendChoice);
-            
             this.options.series.forEach(element => {
                 if (element.id === this.legendChoice) {
                     element.visible = element.visible ? false : true;
