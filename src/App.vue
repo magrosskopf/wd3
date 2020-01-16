@@ -4,32 +4,7 @@
     <full-page ref="fullpage" :options="options" id="fullpage">
 
       <div class="section 01 gradient-start ">
-       
-          <img src="@/assets/Element 2a.svg" width="80%" class="header-image" />
-        
-        <b-container class="bv-example-row mt-5">
-          <b-row>
-            <b-col cols="12">
-              <h1 class="h1-style">
-                Potenziale der Digitalisierung
-              </h1>
-            </b-col>
-          </b-row>
-          <b-row class="mb-4">
-            <b-col cols="8" offset="2" class="mt-3">
-              <p>
-                Ein Projekt des Studiengangs „Onlinemedien“ der DHBW Mosbach, des Moduls WebDesign 3 von Marius
-                Großkopf, Henning Löwe, Michelle Schmidt, Nathalie Wolf und Tamira Wolpert. Die abgebildeten Daten
-                basieren auf dem Monitoring-Report Wirtschaft DIGITAL 2018.
-              </p>
-            </b-col>
-          </b-row>
-          <b-row class="mt-3">
-            <b-col>
-              <img src="@/assets/arrow_down.svg" width="40px"/>
-            </b-col>
-          </b-row>
-        </b-container>
+        <start></start>
       </div>
 
       <div class="section 02 gradient-end ">
@@ -37,11 +12,7 @@
       </div>
 
       <div class="section 03 bg-lightBlue">
-        <b-container class="bv-example-row">
-          <b-row>
-         
-          </b-row>
-        </b-container>
+        <erfolge ref="erfolge"></erfolge>
       </div>
 
       <div class="section 04">
@@ -265,6 +236,8 @@
   import lollipopKosten from './components/lollipop/hemmnisse/lollipopKosten.vue'
   import lollipopDatenschutz from './components/lollipop/hemmnisse/lollipopDatenschutz.vue'
   import impressum from './components/impressum.vue'
+  import erfolge from './components/erfolge.vue'
+  import start from './components/start.vue'
 
   export default {
     name: 'app',
@@ -280,16 +253,34 @@
       lollipopKnowHow,
       lollipopKosten,
       lollipopDatenschutz,
-      impressum
+      impressum,
+      erfolge,
+      start
+    },
+    props: {
+      locked3: Boolean,
     },
     data() {
       return {
         options: {
           navigation: true,
+          onLeave: this.onLeave,
           anchors: ['01', '02', '03', '04', '05', '06', '07'],
           scrollHorizontally: true
+           
         }
       }
+    },
+    created: function () {
+      this.locked3 = true;
+    },
+    methods: {
+        onLeave(origin, destination) {
+              var child = this.$refs.erfolge;
+          if(destination.anchor.indexOf("03") === 0 && this.locked3 === true) {
+              child.animStart();
+          }
+        }
     }
   }
 </script>
