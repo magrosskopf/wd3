@@ -34,9 +34,9 @@
               class="cls-4" transform="translate(276.42 299)">Titel: </text><text class="cls-5"
               transform="translate(331.61 299)">Potenziale der Digitalisierung</text><text class="cls-4"
               transform="translate(229.24 326)">Studenten:</text><text class="cls-5" transform="translate(339.04 326)">
-              <tspan xml:space="preserve"> Marius Großkopf, Henning Löwe,</tspan>
-            </text><text class="cls-5" transform="translate(215.54 353)">Michelle Schmidt, Nathalie Wolf, Tamira
-              Wolpert</text><text class="cls-4" transform="translate(282.65 380)">Dozent:</text><text class="cls-5"
+              <tspan xml:space="preserve">Michelle Schmidt, Nathalie Wolf,</tspan>
+            </text><text class="cls-5" transform="translate(215.54 353)">Tamira
+              Wolpert, Marius Großkopf, Henning Löwe</text><text class="cls-4" transform="translate(282.65 380)">Dozent:</text><text class="cls-5"
               transform="translate(358.94 380)">
               <tspan xml:space="preserve"> Dipl.-Des. Lothar B. Blum</tspan>
             </text><text class="cls-4" transform="translate(346.33 407)">Abgabe:</text><text class="cls-5"
