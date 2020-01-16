@@ -56,9 +56,6 @@
         },
         useHTML: true,
         formatter: function() {
-          // return this.value + '<img style="width:20px; height:20px;" src="../assets/icons/' + this.value.substring(0, 3) + '.svg" />&nbsp<span style="font-weight: normal;vertical-align: super;">';
-          // return this.value + '<img style="width:20px; height:20px;" src="/assets/icons/Che.svg" />';
-
           return {
             'IKT': this.value + '<img style="width:30px; height:30px; margin: 0 15px 0 30px" src="/img/03_ikt.b2b7a466.svg" />',
             'Wissensintens. Dienstleister': this.value + '<img style="width:30px; height:30px; margin: 0 15px 0 30px" src="/img/08_wissenschaft.ca62d138.svg" />',
@@ -114,7 +111,6 @@
           borderRadius: 30,
           useHTML: true,
           formatter: function() {
-            console.log(this.point);
             return '<p style="margin: -15px 0 0 -12px;">' + this.point.y + '</p>' + '<div style="width: 10px; height: 10px; border-radius: 5px; background-color: #101C4B; margin: 0 0 0 -10px;"></div>';
           }
         }

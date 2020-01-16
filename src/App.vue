@@ -52,7 +52,7 @@
                 <img src="@/assets/unternehmen.svg" class="icon-bubble"/>
               </b-col>
               <b-col cols="8" offset="1">
-                <h3 class="h2-style">
+                <h3 class="h2-styleSlide">
                   Verbesserung der Kundeninformation
                 </h3>
               </b-col>
@@ -71,7 +71,7 @@
                 <img src="@/assets/unternehmen.svg" class="icon-bubble"/>
               </b-col>
               <b-col cols="8" offset="1">
-                <h3 class="h2-style">
+                <h3 class="h2-styleSlide">
                   Aufbau von erfolgsrelevantem Wissen
                 </h3>
               </b-col>
@@ -90,7 +90,7 @@
                 <img src="@/assets/unternehmen.svg" class="icon-bubble"/>
               </b-col>
               <b-col cols="8" offset="1">
-                <h3 class="h2-style">
+                <h3 class="h2-styleSlide">
                   Verbesserung der Qualität
                 </h3>
               </b-col>
@@ -109,7 +109,7 @@
                 <img src="@/assets/unternehmen.svg" class="icon-bubble"/>
               </b-col>
               <b-col cols="8" offset="1">
-                <h3 class="h2-style">
+                <h3 class="h2-styleSlide">
                   Steigerung der Innovationsfähigkeit
                 </h3>
               </b-col>
@@ -128,7 +128,7 @@
                 <img src="@/assets/unternehmen.svg" class="icon-bubble"/>
               </b-col>
               <b-col cols="8" offset="1">
-                <h3 class="h2-style">
+                <h3 class="h2-styleSlide">
                   Erschließung neuer Märkte oder Kundengruppen
                 </h3>
               </b-col>
@@ -154,7 +154,7 @@
                 <img src="@/assets/unternehmen.svg" class="icon-bubble"/>
               </b-col>
               <b-col cols="8" offset="1">
-                <h3 class="h2-style" style="color: white;">
+                <h3 class="h2-styleSlide" style="color: white;">
                   Kein leistungsfähiges Breitband
                 </h3>
               </b-col>
@@ -173,7 +173,7 @@
                 <img src="@/assets/unternehmen.svg" class="icon-bubble"/>
               </b-col>
               <b-col cols="8" offset="1">
-                <h3 class="h2-style" style="color: white;">
+                <h3 class="h2-styleSlide" style="color: white;">
                   Zeitaufwand zu hoch
                 </h3>
               </b-col>
@@ -192,7 +192,7 @@
                 <img src="@/assets/unternehmen.svg" class="icon-bubble"/>
               </b-col>
               <b-col cols="8" offset="1">
-                <h3 class="h2-style" style="color: white;">
+                <h3 class="h2-styleSlide" style="color: white;">
                   Fehlendes Know-how der Mitarbeiter
                 </h3>
               </b-col>
@@ -211,7 +211,7 @@
                 <img src="@/assets/unternehmen.svg" class="icon-bubble"/>
               </b-col>
               <b-col cols="8" offset="1">
-                <h3 class="h2-style" style="color: white;">
+                <h3 class="h2-styleSlide" style="color: white;">
                   Zu hoher Investitionsbedarf
                 </h3>
               </b-col>
@@ -230,7 +230,7 @@
                 <img src="@/assets/unternehmen.svg" class="icon-bubble"/>
               </b-col>
               <b-col cols="8" offset="1">
-                <h3 class="h2-style" style="color: white;">
+                <h3 class="h2-styleSlide" style="color: white;">
                   Keine Notwendigkeit erkennbar
                 </h3>
               </b-col>
@@ -252,14 +252,6 @@
         </b-container>
       </div>
 
-      <div class="section 08 ">
-        <b-container class="bv-example-row">
-          <b-row>
-         
-          </b-row>
-        </b-container>
-      </div>
-
     </full-page>
 
   </div>
@@ -272,7 +264,7 @@
   import lollipopQualität from './components/lollipop/erfolge/lollipopQualität.vue'
   import lollipopInnovation from './components/lollipop/erfolge/lollipopInnovation.vue'
   import lollipopMärkte from './components/lollipop/erfolge/lollipopMärkte.vue'
-  import lollipopBandbreite from './components/lollipop/hemmnisse/lollipopBandbreite.vue'
+  // import lollipopBandbreite from './components/lollipop/hemmnisse/lollipopBandbreite.vue'
 
   export default {
     name: 'app',
@@ -283,13 +275,13 @@
       lollipopQualität,
       lollipopInnovation,
       lollipopMärkte,
-      lollipopBandbreite
+      // lollipopBandbreite
     },
     data() {
       return {
         options: {
           navigation: true,
-          anchors: ['01', '02', '03', '04', '05', '06'],
+          anchors: ['01', '02', '03', '04', '05', '06', '07'],
           scrollHorizontally: true
         }
       }
@@ -336,6 +328,17 @@ $gradient-color-end: #DFEDF4;
     font-weight: 400;
     text-transform: uppercase;
     padding: 100px 0 60px 0;
+  }
+
+  .h2-styleSlide {
+    font-size: 40pt
+      /* Original Entwurf war 55pt */
+    ;
+    color: #00071F;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 20px 0 60px 0;
   }
 
   .h3-style {
@@ -388,7 +391,11 @@ $gradient-color-end: #DFEDF4;
   }
 
   .bubble-padding {
-    margin: 80px 0 0 -70px;
+    margin: 0 0 0 -70px;
+  }
+
+  .fp-controlArrow {
+    display: none;
   }
 
   #fp-nav {
@@ -423,7 +430,7 @@ $gradient-color-end: #DFEDF4;
     margin: 6px 0 6px 12px;
   }
 
-  #fp-nav ul li:nth-child(6):after {
+  #fp-nav ul li:nth-child(7):after {
     content: "";
     display: none;
   }
