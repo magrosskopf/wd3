@@ -188,7 +188,11 @@
            animStart() {
  
                 // console.log(document.getElementById("Pfad_2445").class )
-
+                    document.getElementById("Gruppe_159").setAttribute("class", "fadeIn gruppe");
+                    document.getElementById("Gruppe_161").setAttribute("class", "fadeIn gruppe");
+                    document.getElementById("Gruppe_160").setAttribute("class", "fadeIn gruppe");
+                    document.getElementById("Gruppe_162").setAttribute("class", "fadeIn gruppe");
+                    document.getElementById("Gruppe_163").setAttribute("class", "fadeIn gruppe");   
                 
 
                 window.setTimeout(() => {
@@ -199,11 +203,7 @@
                     document.getElementById("Pfad_2444").setAttribute("class", "cls-1 pfad2");
                     document.getElementById("Pfad_2447").setAttribute("class", "cls-1 pfad_slow");
 
-                    document.getElementById("Gruppe_159").setAttribute("class", "fadeIn gruppe");
-                    document.getElementById("Gruppe_161").setAttribute("class", "fadeIn gruppe");
-                    document.getElementById("Gruppe_160").setAttribute("class", "fadeIn gruppe");
-                    document.getElementById("Gruppe_162").setAttribute("class", "fadeIn gruppe");
-                    document.getElementById("Gruppe_163").setAttribute("class", "fadeIn gruppe");
+                    
 
 
                     document.getElementById("Ellipse_449").setAttribute("r", "13.59");
