@@ -3,11 +3,11 @@
 
     <full-page ref="fullpage" :options="options" id="fullpage">
 
-      <div class="section 01 gradient-start ">
+      <div class="section 01 home gradient-start">
         <start></start>
       </div>
 
-      <div class="section 02 gradient-end ">
+      <div class="section 02 gradient-end">
         <informationen></informationen>
       </div>
 
@@ -116,7 +116,7 @@
       <div class="section 05 bg-darkBlue">
       </div>
 
-      <div class="section 06 ">
+      <div class="section 06">
         <div class="slide bg-darkBlue">
           <b-container class="bv-example-row">
             <b-row>
@@ -214,7 +214,34 @@
         </div>
       </div>
 
-      <div class="section 07 bg-lightBlue">
+      <div class="section 07" id="branchenvergleich">
+        <b-container class="bv-example-row">
+          <b-row>
+            <b-col>
+              <h2 class="h2-style" style="padding: 0;">Branchen<span style="color: white;">vergleich</span></h2>
+            </b-col>
+          </b-row>
+          <b-row>
+            <b-col cols="6">
+              <h3 class="h3-style">Erfolge</h3>
+            </b-col>
+            <b-col cols="6">
+              <h3 class="h3-style" style="color: white;">Hemmnisse</h3>
+            </b-col>
+          </b-row>
+          <b-row>
+            <b-col cols="6" class="endCharts">
+              <ErfolgChart :legendChoice="legendChoice" :changingChoice="changingChoice"/>
+            </b-col>
+            <b-col cols="6" class="startCharts">
+              <HemmnisseChart :legendChoice="legendChoice" :changingChoice="changingChoice"/>
+            </b-col>
+          </b-row>
+          <LegendeVergleich v-on:legende="legendeInput"/>
+        </b-container>
+      </div>
+
+      <div class="section bg-lightBlue">
         <impressum></impressum>
       </div>
 
@@ -238,6 +265,9 @@
   import impressum from './components/impressum.vue'
   import erfolge from './components/erfolge.vue'
   import start from './components/start.vue'
+  import ErfolgChart from './components/ErfolgChart'
+  import HemmnisseChart from './components/HemmnisseChart'
+  import LegendeVergleich from './components/LegendeVergleich'
 
   export default {
     name: 'app',
@@ -255,7 +285,10 @@
       lollipopDatenschutz,
       impressum,
       erfolge,
-      start
+      start,
+      ErfolgChart,
+      HemmnisseChart,
+      LegendeVergleich
     },
     props: {
       locked3: Boolean,
@@ -265,22 +298,27 @@
         options: {
           navigation: true,
           onLeave: this.onLeave,
-          anchors: ['01', '02', '03', '04', '05', '06', '07'],
+          anchors: ['00', '01', '02', '03', '04', '05', '06', '07'],
           scrollHorizontally: true
-           
-        }
+        },
+        legendChoice: '',
+        changingChoice: false
       }
     },
     created: function () {
       this.locked3 = true;
     },
     methods: {
-        onLeave(origin, destination) {
-              var child = this.$refs.erfolge;
-          if(destination.anchor.indexOf("03") === 0 && this.locked3 === true) {
-              child.animStart();
-          }
+      onLeave(origin, destination) {
+            var child = this.$refs.erfolge;
+        if(destination.anchor.indexOf("03") === 0 && this.locked3 === true) {
+            child.animStart();
         }
+      },
+      legendeInput(id) {
+        this.legendChoice = id;
+        this.changingChoice = !this.changingChoice;
+      }
     }
   }
 </script>
@@ -390,6 +428,30 @@ $gradient-color-end: #DFEDF4;
     margin: 0 0 0 -70px;
   }
 
+  #erfolgHeadline h3 {
+    color: #08164A;
+  }
+
+  #hemmnisseHeadline h3 {
+    color: white;
+  }
+
+  .startCharts {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .endCharts {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  #branchenvergleich {
+    background-image: url('./assets/bg_branchenvergleich.svg');
+    background-color: #08164A;
+    background-size: 100%;
+  }
+
   .fp-controlArrow {
     display: none;
   }
@@ -436,5 +498,96 @@ $gradient-color-end: #DFEDF4;
     color: #00071F;
     font-family: 'Orbitron', sans-serif;
     font-weight: 400;
+  }
+  
+  /* Section 4 */
+  .fp-viewing-04 #fp-nav ul li:after {
+    background: white;
+  }
+
+  .fp-viewing-04 #fp-nav ul li:after {
+    background: white;
+  }
+
+  .fp-viewing-04 #fp-nav ul li a{
+    color: white;
+  }
+
+  /* Section 5-0 */
+  .fp-viewing-05-0 #fp-nav ul li:after {
+    background: white;
+  }
+
+  .fp-viewing-05-0 #fp-nav ul li:after {
+    background: white;
+  }
+
+  .fp-viewing-05-0 #fp-nav ul li a{
+    color: white;
+  }
+
+  /* Section 5-1 */
+  .fp-viewing-05-1 #fp-nav ul li:after {
+    background: white;
+  }
+
+  .fp-viewing-05-1 #fp-nav ul li:after {
+    background: white;
+  }
+
+  .fp-viewing-05-1 #fp-nav ul li a{
+    color: white;
+  }
+
+  /* Section 5-2 */
+  .fp-viewing-05-2 #fp-nav ul li:after {
+    background: white;
+  }
+
+  .fp-viewing-05-2 #fp-nav ul li:after {
+    background: white;
+  }
+
+  .fp-viewing-05-2 #fp-nav ul li a{
+    color: white;
+  }
+
+  /* Section 5-3 */
+  .fp-viewing-05-3 #fp-nav ul li:after {
+    background: white;
+  }
+
+  .fp-viewing-05-3 #fp-nav ul li:after {
+    background: white;
+  }
+
+  .fp-viewing-05-3 #fp-nav ul li a{
+    color: white;
+  }
+
+  /* Section 5-4 */
+  .fp-viewing-05-4 #fp-nav ul li:after {
+    background: white;
+  }
+
+  .fp-viewing-05-4 #fp-nav ul li:after {
+    background: white;
+  }
+
+  .fp-viewing-05-4 #fp-nav ul li a{
+    color: white;
+  }
+
+  /* Section 6 */
+  .fp-viewing-06 #fp-nav ul li:after {
+    background: white;
+  }
+
+  .fp-viewing-06 #fp-nav ul li:after {
+    background: white;
+  }
+
+  .fp-viewing-06 #fp-nav ul li a{
+    color: white;
   }
 </style>
