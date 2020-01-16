@@ -142,7 +142,7 @@
         </div>
       </div>
 
-      <div class="section 05 ">
+      <div class="section 05 bg-darkBlue">
         
       </div>
 
@@ -180,7 +180,7 @@
             </b-row>
             <b-row>
               <b-col class="centerChart">
-                <lollipopBandbreite />
+                <lollipopZeitaufwand />
               </b-col>
             </b-row>
           </b-container>
@@ -199,7 +199,7 @@
             </b-row>
             <b-row>
               <b-col class="centerChart">
-                <lollipopBandbreite />
+                <lollipopKnowHow />
               </b-col>
             </b-row>
           </b-container>
@@ -218,7 +218,7 @@
             </b-row>
             <b-row>
               <b-col class="centerChart">
-                <lollipopBandbreite />
+                <lollipopKosten />
               </b-col>
             </b-row>
           </b-container>
@@ -237,7 +237,7 @@
             </b-row>
             <b-row>
               <b-col class="centerChart">
-                <lollipopBandbreite />
+                <lollipopDatenschutz />
               </b-col>
             </b-row>
           </b-container>
@@ -264,7 +264,11 @@
   import lollipopQualität from './components/lollipop/erfolge/lollipopQualität.vue'
   import lollipopInnovation from './components/lollipop/erfolge/lollipopInnovation.vue'
   import lollipopMärkte from './components/lollipop/erfolge/lollipopMärkte.vue'
-  // import lollipopBandbreite from './components/lollipop/hemmnisse/lollipopBandbreite.vue'
+  import lollipopBandbreite from './components/lollipop/hemmnisse/lollipopBandbreite.vue'
+  import lollipopZeitaufwand from './components/lollipop/hemmnisse/lollipopZeitaufwand.vue'
+  import lollipopKnowHow from './components/lollipop/hemmnisse/lollipopKnowHow.vue'
+  import lollipopKosten from './components/lollipop/hemmnisse/lollipopKosten.vue'
+  import lollipopDatenschutz from './components/lollipop/hemmnisse/lollipopDatenschutz.vue'
 
   export default {
     name: 'app',
@@ -275,7 +279,11 @@
       lollipopQualität,
       lollipopInnovation,
       lollipopMärkte,
-      // lollipopBandbreite
+      lollipopBandbreite,
+      lollipopZeitaufwand,
+      lollipopKnowHow,
+      lollipopKosten,
+      lollipopDatenschutz
     },
     data() {
       return {
