@@ -218,7 +218,7 @@
         <b-container class="bv-example-row">
           <b-row>
             <b-col>
-              <h2 class="h2-style" style="padding: 0;">Branchen<span style="color: white;">vergleich</span></h2>
+              <h2 class="h2-style" style="padding: 0; margin-right: -14px;">Branchen<span style="color: white;">vergleich</span></h2>
             </b-col>
           </b-row>
           <b-row>
@@ -311,7 +311,7 @@
     methods: {
       onLeave(origin, destination) {
             var child = this.$refs.erfolge;
-        if(destination.anchor.indexOf("03") === 0 && this.locked3 === true) {
+        if(destination.anchor.indexOf("02") === 0 && this.locked3 === true) {
             child.animStart();
         }
       },
@@ -361,11 +361,11 @@ $gradient-color-end: #DFEDF4;
     font-family: 'Orbitron', sans-serif;
     font-weight: 400;
     text-transform: uppercase;
-    padding: 100px 0 60px 0;
+    padding: 0 0 60px 0;
   }
 
   .h2-styleSlide {
-    font-size: 40pt
+    font-size: 35pt
       /* Original Entwurf war 55pt */
     ;
     color: #00071F;
@@ -489,6 +489,11 @@ $gradient-color-end: #DFEDF4;
   }
 
   #fp-nav ul li:nth-child(7):after {
+    content: "";
+    display: none;
+  }
+
+  #fp-nav ul li:nth-child(8) {
     content: "";
     display: none;
   }
