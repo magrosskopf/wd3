@@ -14,7 +14,6 @@
         <b-row>
             <b-col class="svg">
                 <svg xmlns="http://www.w3.org/2000/svg" id="mysvg" viewBox="0 0 1572.44 825.69">
-                    <title>Element 7_1</title>
                     <g id="Ebene_2" data-name="Ebene 2">
                         <g id="Ebene_1-2" data-name="Ebene 1">
                             <path id="Pfad_2449" data-name="Pfad 2449" class="cls-1"
