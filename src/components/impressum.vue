@@ -15,7 +15,6 @@
     <b-row>
       <b-col>
         <svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1540.59 726">
-          <title>impressum-circles</title>
           <path id="Pfad_2465" data-name="Pfad 2465" class="cls-1"
             d="M1368.83,433.17l226,275.78,102.73,46.75,52.35,23.51" transform="translate(-220.83 -176.67)" />
           <path id="Pfad_2464" data-name="Pfad 2464" class="cls-1" d="M642.83,495.17,336.1,313.7,227.7,301.53"

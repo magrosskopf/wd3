@@ -2,7 +2,6 @@
     <div>
         <b-container class="bv-example-row">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1897.31 571.29">
-                <title>Element 2a</title>
                 <g id="Ebene_2" data-name="Ebene 2">
                     <g id="Ebene_1-2" data-name="Ebene 1">
                         <path id="Pfad_2402" data-name="Pfad 2402" class="cls-1"
