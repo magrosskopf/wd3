@@ -283,7 +283,7 @@
             </b-row>
             <b-row class="mt-5">
                 <b-col>
-                    <img src="@/assets/arrow_down.svg" width="50px" />
+                    <img src="@/assets/arrow_down.svg" width="40px" />
                 </b-col>
             </b-row>
         </b-container>
