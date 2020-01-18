@@ -72,7 +72,23 @@ const data = {
     },
     tooltip: {
         crosshairs: true,
-        shared: true
+        shared: true,
+        backgroundColor: 'white',
+        borderRadius: 20,
+        borderColor: 'white',
+        useHTML: true,
+        distance: 50,
+        headerFormat: '<span style="font-size: 11px;">{point.key}</span><table style="margin-top: 8px;">',
+        pointFormat: 
+            '<tr style="border-top: 1px solid rgba(20,59,124,0.3); border-bottom: 1px solid rgba(20,59,124,0.3); padding: 5px 0;">' + 
+            '<td><div style="width: 10px; height: 10px; border-radius: 5px; background-color: {series.color}; margin: 5px 3px 5px 0"></div></td>' +
+            '<td"><td>{series.name}</td>' +
+            '<td style="text-align: right;"><b>{point.y} %</b></td></tr>',
+        footerFormat: '</table>',
+        style: {
+            color: '#143B7C',
+            fontSize: '9px'
+        }
     },
     plotOptions: {
         series: {
