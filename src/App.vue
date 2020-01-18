@@ -114,6 +114,7 @@
       </div>
 
       <div class="section 05 bg-darkBlue">
+        <hemnisse ref="hemnisse" />
       </div>
 
       <div class="section 06">
@@ -287,13 +288,10 @@
       impressum,
       erfolge,
       start,
-<<<<<<< HEAD
-      hemnisse
-=======
+      hemnisse,
       ErfolgChart,
       HemmnisseChart,
       LegendeVergleich
->>>>>>> dev
     },
     props: {
       locked3: Boolean,
@@ -314,7 +312,6 @@
       this.locked3 = true;
     },
     methods: {
-<<<<<<< HEAD
         onLeave(origin, destination) {
               var child = this.$refs.erfolge;
               var hem = this.$refs.hemnisse;
@@ -324,12 +321,6 @@
           if(destination.anchor.indexOf("05") === 0 && this.locked3 === true) {
               hem.animStart();
           }
-=======
-      onLeave(origin, destination) {
-            var child = this.$refs.erfolge;
-        if(destination.anchor.indexOf("03") === 0 && this.locked3 === true) {
-            child.animStart();
->>>>>>> dev
         }
       },
       legendeInput(id) {
@@ -337,7 +328,7 @@
         this.changingChoice = !this.changingChoice;
       }
     }
-  }
+  
 </script>
 
 <style>
