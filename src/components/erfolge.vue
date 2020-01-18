@@ -14,7 +14,6 @@
         <b-row>
             <b-col class="svg">
                 <svg xmlns="http://www.w3.org/2000/svg" id="mysvg" viewBox="0 0 1572.44 825.69">
-                    <title>Element 7_1</title>
                     <g id="Ebene_2" data-name="Ebene 2">
                         <g id="Ebene_1-2" data-name="Ebene 1">
                             <path id="Pfad_2449" data-name="Pfad 2449" class="cls-1"
@@ -164,6 +163,11 @@
             }
         },
         mounted() {
+            document.getElementById("Gruppe_159").setAttribute("class", "fadeIn gruppe");
+                    document.getElementById("Gruppe_161").setAttribute("class", "fadeIn gruppe");
+                    document.getElementById("Gruppe_160").setAttribute("class", "fadeIn gruppe");
+                    document.getElementById("Gruppe_162").setAttribute("class", "fadeIn gruppe");
+                    document.getElementById("Gruppe_163").setAttribute("class", "fadeIn gruppe");   
 
             document.getElementById("Ellipse_448").setAttribute("r", "0");
 
@@ -188,12 +192,9 @@
            animStart() {
  
                 // console.log(document.getElementById("Pfad_2445").class )
-                    document.getElementById("Gruppe_159").setAttribute("class", "fadeIn gruppe");
-                    document.getElementById("Gruppe_161").setAttribute("class", "fadeIn gruppe");
-                    document.getElementById("Gruppe_160").setAttribute("class", "fadeIn gruppe");
-                    document.getElementById("Gruppe_162").setAttribute("class", "fadeIn gruppe");
-                    document.getElementById("Gruppe_163").setAttribute("class", "fadeIn gruppe");   
-                
+                window.setTimeout(() => {
+                    
+                }, 200)
 
                 window.setTimeout(() => {
                     document.getElementById("Pfad_2449").setAttribute("class", "cls-1 pfad");
@@ -221,27 +222,27 @@
                     
 
                     // document.getElementById("Ellipse_449").setAttribute("r", "13.59");
-                }, 200)
+                }, 400)
                 window.setTimeout(() => {
                     document.getElementById("Ellipse_448").setAttribute("r", "19.41");
                     document.getElementById("Ellipse_447").setAttribute("class", "opacity1");
                     // TODO: Ellipse_447
 
-                }, 300)
+                }, 500)
 
                 window.setTimeout(() => {
                     document.getElementById("Ellipse_462").setAttribute("r", "19.41");
                     document.getElementById("Ellipse_461").setAttribute("class", "opacity1");
                     //TODO: Ellipse_461
 
-                }, 750)
+                }, 950)
 
 
                 window.setTimeout(() => {
                     document.getElementById("Ellipse_463").setAttribute("r", "13.59");
                     
 
-                }, 1000)
+                }, 1200)
 
                 window.setTimeout(() => {
                     document.getElementById("Ellipse_450").setAttribute("r", "59.53");
@@ -249,18 +250,18 @@
 
 
 
-                }, 1200) 
+                }, 1400) 
 
                 window.setTimeout(() => {
                     document.getElementById("Ellipse_464").setAttribute("r", "13.59");
 
                     
-                }, 1500) 
+                }, 1700) 
                 window.setTimeout(() => {
                     document.getElementById("Ellipse_453").setAttribute("r", "59.53");
            
                     
-                }, 2000)    
+                }, 2200)    
 
                 window.setTimeout(() => {
                     document.getElementById("Ellipse_451").setAttribute("r", "59.53");
@@ -269,7 +270,7 @@
                     document.getElementById("Ellipse_456").setAttribute("class", "opacity1");
 
                     //TODO: Ellipse_456
-                }, 1700) 
+                }, 1900) 
                 window.setTimeout(() => {
                     document.getElementById("Ellipse_460").setAttribute("r", "13.59");
 
@@ -277,16 +278,16 @@
 
                     
 
-                }, 1800) 
+                }, 2000) 
 
                 window.setTimeout(() => {
                     document.getElementById("Ellipse_459").setAttribute("r", "13.59");
                    
-                }, 1850) 
+                }, 2050) 
 
                 window.setTimeout(() => {
                     
-               }, 2300) 
+               }, 2500) 
 
 
  
@@ -394,14 +395,14 @@
 
     svg {
         margin-top: 60px;
-        transition: 1500ms ease-in-out;
+        transition: 300ms ease-in-out;
 
     }
 
     .gruppe {
         overflow: hidden;
         opacity: 0;
-        transition: 600ms;
+        transition: 300ms;
     }
 
     .fadeIn {
@@ -425,9 +426,8 @@
     .cls-9,
     .gruppe text,
     .gruppe line {
-        transition: 600ms ease-in-out;
+        transition: 300ms ease-in-out;
         transition-property: opacity;
-        transition-delay: 200ms;
     }
 
 

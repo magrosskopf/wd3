@@ -107,8 +107,8 @@
                             <circle class="cls-1" cx="986.06" cy="148.17" r="87.69" />
                         </g>
                         <g id="Ellipse_437" data-name="Ellipse 437">
-                            <circle class="cls-7" cx="1314.75" cy="285.53" r="88.3" />
-                            <circle class="cls-1" cx="1314.75" cy="285.53" r="87.69" />
+                            <circle class="cls-7 circle" cx="1314.75" cy="285.53" r="88.3" />
+                            <circle class="cls-1 circle" cx="1314.75" cy="285.53" r="87.69" />
                         </g>
                         <g id="cloud-computing">
                             <path id="Pfad_2405" data-name="Pfad 2405" class="cls-7"
@@ -304,7 +304,6 @@
             }
         },
         mounted() {
-            console.log(document.getElementsByTagName('path'))
             document.getElementsByTagName("path")[0].setAttribute("class", "cls-1 pfad");
             document.getElementsByTagName("path")[1].setAttribute("class", "cls-1 pfad");
             document.getElementsByTagName("path")[2].setAttribute("class", "cls-1 pfad");
@@ -315,6 +314,100 @@
             document.getElementsByTagName("path")[7].setAttribute("class", "cls-1 pfad");
             document.getElementsByTagName("path")[8].setAttribute("class", "cls-1 pfad");
             document.getElementsByTagName("path")[9].setAttribute("class", "cls-1 pfad");
+
+
+            document.getElementsByTagName('circle')
+
+            let radiusArray = [];
+            console.log( 'länge' + document.getElementsByTagName('circle').length)
+            
+
+            for(let i = 0; i < document.getElementsByTagName('circle').length; i++){
+                radiusArray.push(document.getElementsByTagName('circle')[i].getAttribute('r'))
+            }
+
+            setInterval(() => {
+                
+                    document.getElementsByTagName('circle')[21].setAttribute('r', radiusArray[21] )
+                    document.getElementsByTagName('circle')[20].setAttribute('r', radiusArray[20] )
+                    document.getElementsByTagName('circle')[0].setAttribute('r', radiusArray[0] * 2)
+                    document.getElementsByTagName('circle')[1].setAttribute('r', radiusArray[1] * 1.5)
+                 
+            }, 1000)
+            setInterval(() => {
+                    document.getElementsByTagName('circle')[0].setAttribute('r', radiusArray[0] )
+                    document.getElementsByTagName('circle')[1].setAttribute('r', radiusArray[1] )
+                    document.getElementsByTagName('circle')[2].setAttribute('r', radiusArray[2] * 1.4)
+                    document.getElementsByTagName('circle')[3].setAttribute('r', radiusArray[3] * 0.5)
+                 
+            }, 2000)
+            setInterval(() => {
+                document.getElementsByTagName('circle')[2].setAttribute('r', radiusArray[2] )
+                    document.getElementsByTagName('circle')[3].setAttribute('r', radiusArray[3] )
+                    document.getElementsByTagName('circle')[4].setAttribute('r', radiusArray[4] * 1.9)
+                    document.getElementsByTagName('circle')[5].setAttribute('r', radiusArray[5] * 1.6)
+                 
+            }, 1500)
+            setInterval(() => {
+                document.getElementsByTagName('circle')[4].setAttribute('r', radiusArray[4] )
+                    document.getElementsByTagName('circle')[5].setAttribute('r', radiusArray[5] )
+                    document.getElementsByTagName('circle')[6].setAttribute('r', radiusArray[6] * 1.2)
+                    document.getElementsByTagName('circle')[7].setAttribute('r', radiusArray[7] * 0.6)
+                 
+            }, 700)
+            setInterval(() => {
+                document.getElementsByTagName('circle')[6].setAttribute('r', radiusArray[6] )
+                    document.getElementsByTagName('circle')[7].setAttribute('r', radiusArray[7] )
+                    document.getElementsByTagName('circle')[8].setAttribute('r', radiusArray[8] * 1.5)
+                    document.getElementsByTagName('circle')[9].setAttribute('r', radiusArray[9] * 0.5)
+                 
+            }, 900)
+            setInterval(() => {
+                document.getElementsByTagName('circle')[8].setAttribute('r', radiusArray[8] )
+                    document.getElementsByTagName('circle')[9].setAttribute('r', radiusArray[9] )
+                    document.getElementsByTagName('circle')[10].setAttribute('r', radiusArray[10] * 1.4)
+                    document.getElementsByTagName('circle')[11].setAttribute('r', radiusArray[1] * 0.5)
+                 
+            }, 1700)
+            setInterval(() => {
+                document.getElementsByTagName('circle')[10].setAttribute('r', radiusArray[10] )
+                    document.getElementsByTagName('circle')[11].setAttribute('r', radiusArray[11] )
+                    document.getElementsByTagName('circle')[12].setAttribute('r', radiusArray[12] * 0.4)
+                    document.getElementsByTagName('circle')[13].setAttribute('r', radiusArray[13] * 1.5)
+                 
+            }, 1340)
+            setInterval(() => {
+                document.getElementsByTagName('circle')[12].setAttribute('r', radiusArray[12] )
+                    document.getElementsByTagName('circle')[13].setAttribute('r', radiusArray[13] )
+                    document.getElementsByTagName('circle')[14].setAttribute('r', radiusArray[14] * 1.8)
+                    document.getElementsByTagName('circle')[15].setAttribute('r', radiusArray[14] * 1.5)
+                 
+            }, 1290)
+            setInterval(() => {
+                document.getElementsByTagName('circle')[14].setAttribute('r', radiusArray[14] )
+                    document.getElementsByTagName('circle')[15].setAttribute('r', radiusArray[15] )
+                    document.getElementsByTagName('circle')[16].setAttribute('r', radiusArray[16] * 0.8)
+                    document.getElementsByTagName('circle')[17].setAttribute('r', radiusArray[17] * 0.7)
+                 
+                
+                 
+            }, 440)
+            setInterval(() => {
+                 document.getElementsByTagName('circle')[16].setAttribute('r', radiusArray[16] )
+                    document.getElementsByTagName('circle')[17].setAttribute('r', radiusArray[17] )
+                    document.getElementsByTagName('circle')[18].setAttribute('r', radiusArray[18] * 1.2)
+                    document.getElementsByTagName('circle')[19].setAttribute('r', radiusArray[19] * 1.7)
+                 
+                 
+            }, 1846)
+            setInterval(() => {
+                 document.getElementsByTagName('circle')[18].setAttribute('r', radiusArray[16] )
+                    document.getElementsByTagName('circle')[19].setAttribute('r', radiusArray[17] )
+                    document.getElementsByTagName('circle')[20].setAttribute('r', radiusArray[18] * 1.2)
+                    document.getElementsByTagName('circle')[21].setAttribute('r', radiusArray[19] * 1.7)
+                 
+                 
+            }, 1234)
            
         }
     }
@@ -322,6 +415,9 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+   
+
     @keyframes build {
         0% {
             stroke-dashoffset: 1000;
@@ -344,7 +440,7 @@
         }
 
         100% {
-            stroke-dashoffset: 2000;
+            stroke-dashoffset: 1000;
         }
     }
 
@@ -354,6 +450,12 @@
         animation: build 16s ease-in-out infinite forwards;
         transition: 900ms;
     }
+
+    circle {
+        transition: 500ms
+    }
+
+
 
     .cls-1,
     .cls-2,
