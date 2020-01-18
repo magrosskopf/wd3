@@ -190,7 +190,39 @@
         },
         methods: {
            animStart() {
- 
+            // let radiusArray = [];
+
+            //      for(let i = 0; i < document.getElementsByTagName('circle').length; i++){
+            //     radiusArray.push(document.getElementsByTagName('circle')[i].getAttribute('r'))
+                
+            // }
+
+            // setInterval(() => {
+            //     console.log(document.getElementsByTagName('circle'))
+            //         document.getElementsByTagName('circle')[48].setAttribute('r', radiusArray[48] )
+            //         document.getElementsByTagName('circle')[49].setAttribute('r', radiusArray[49] )
+            //         document.getElementsByTagName('circle')[44].setAttribute('r', radiusArray[44] )
+            //         document.getElementsByTagName('circle')[45].setAttribute('r', radiusArray[45] )
+            //         document.getElementsByTagName('circle')[50].setAttribute('r', radiusArray[50] * 2)
+            //         document.getElementsByTagName('circle')[51].setAttribute('r', radiusArray[51] * 1.5)
+            //         document.getElementsByTagName('circle')[46].setAttribute('r', radiusArray[46] * 1.7)
+            //         document.getElementsByTagName('circle')[47].setAttribute('r', radiusArray[47] * 1.2)
+                 
+            // }, 500)
+            //  setInterval(() => {
+                
+            //         document.getElementsByTagName('circle')[50].setAttribute('r', radiusArray[50] )
+            //         document.getElementsByTagName('circle')[51].setAttribute('r', radiusArray[51] )
+            //         document.getElementsByTagName('circle')[48].setAttribute('r', radiusArray[48] * 1.2)
+            //         document.getElementsByTagName('circle')[49].setAttribute('r', radiusArray[49] * 0.5)
+            //         document.getElementsByTagName('circle')[50].setAttribute('r', radiusArray[46] )
+            //         document.getElementsByTagName('circle')[51].setAttribute('r', radiusArray[47] )
+            //         document.getElementsByTagName('circle')[48].setAttribute('r', radiusArray[44] * 1.9)
+            //         document.getElementsByTagName('circle')[49].setAttribute('r', radiusArray[45] * 1.4)
+                 
+            // }, 1500)
+
+
                 // console.log(document.getElementById("Pfad_2445").class )
                 window.setTimeout(() => {
                     
@@ -335,6 +367,10 @@
     #Ellipse_456, #Ellipse_461, #Ellipse_447 {
         opacity: 0;
         transition: 1500ms;
+    }
+
+    circle {
+        transition: 600ms;
     }
 
     #Ellipse_462,
