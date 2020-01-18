@@ -26,11 +26,7 @@
         </b-container>
       </div>
        <div class="section 05 ">
-        <b-container class="bv-example-row">
-          <b-row>
-         
-          </b-row>
-        </b-container>
+        <hemnisse ref="hemnisse" />
       </div>
       <div class="section 06 ">
         <b-container class="bv-example-row">
@@ -47,6 +43,7 @@
 <script>
   // import titlepage from './components/titlepage.vue'
   import erfolge from './components/erfolge.vue'
+  import hemnisse from './components/hemnisse.vue'
   import start from './components/start.vue'
 
   export default {
@@ -54,7 +51,8 @@
     components: {
       // titlepage
       erfolge,
-      start
+      start,
+      hemnisse
     },
     props: {
       locked3: Boolean,
@@ -75,8 +73,12 @@
     methods: {
         onLeave(origin, destination) {
               var child = this.$refs.erfolge;
+              var hem = this.$refs.hemnisse;
           if(destination.anchor.indexOf("03") === 0 && this.locked3 === true) {
               child.animStart();
+          }
+          if(destination.anchor.indexOf("05") === 0 && this.locked3 === true) {
+              hem.animStart();
           }
         }
     }
