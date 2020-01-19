@@ -42,7 +42,7 @@
                 <img src="@/assets/unternehmen.svg" class="icon-bubble"/>
               </b-col>
               <b-col cols="8" offset="1">
-                <h3 class="h2-styleSlide">
+                <h3 class="h2-styleSlide" style="padding: 0 0 30px 0;">
                   Aufbau von erfolgsrelevantem Wissen
                 </h3>
               </b-col>
@@ -99,7 +99,7 @@
                 <img src="@/assets/unternehmen.svg" class="icon-bubble"/>
               </b-col>
               <b-col cols="8" offset="1">
-                <h3 class="h2-styleSlide">
+                <h3 class="h2-styleSlide" style="padding: 0 0 30px 0;">
                   Erschließung neuer Märkte oder Kundengruppen
                 </h3>
               </b-col>
@@ -144,7 +144,7 @@
                 <img src="@/assets/unternehmen.svg" class="icon-bubble"/>
               </b-col>
               <b-col cols="8" offset="1">
-                <h3 class="h2-styleSlide" style="color: white;">
+                <h3 class="h2-styleSlide" style="color: white; padding: 50px 0 80px 0;">
                   Zeitaufwand zu hoch
                 </h3>
               </b-col>
@@ -370,7 +370,7 @@ $gradient-color-end: #DFEDF4;
     font-family: 'Orbitron', sans-serif;
     font-weight: 400;
     text-transform: uppercase;
-    padding: 0 0 60px 0;
+    padding: 0 0 40px 0;
   }
 
   .h2-styleSlide {
