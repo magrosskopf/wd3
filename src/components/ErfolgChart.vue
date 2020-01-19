@@ -194,8 +194,8 @@ export default {
 </script>
  <style scoped>
     div#chart {
-        width: 30vw;
-        margin-right: 5vw;
+        width: 100%;
+        margin-right: 3vw;
     }
 
     #erfolg {

@@ -114,6 +114,7 @@
       </div>
 
       <div class="section 05 bg-darkBlue">
+        <hemnisse ref="hemnisse" />
       </div>
 
       <div class="section 06">
@@ -264,6 +265,7 @@
   import lollipopDatenschutz from './components/lollipop/hemmnisse/lollipopDatenschutz.vue'
   import impressum from './components/impressum.vue'
   import erfolge from './components/erfolge.vue'
+  import hemnisse from './components/hemnisse.vue'
   import start from './components/start.vue'
   import ErfolgChart from './components/ErfolgChart'
   import HemmnisseChart from './components/HemmnisseChart'
@@ -286,6 +288,7 @@
       impressum,
       erfolge,
       start,
+      hemnisse,
       ErfolgChart,
       HemmnisseChart,
       LegendeVergleich
@@ -309,10 +312,15 @@
       this.locked3 = true;
     },
     methods: {
-      onLeave(origin, destination) {
-            var child = this.$refs.erfolge;
-        if(destination.anchor.indexOf("02") === 0 && this.locked3 === true) {
-            child.animStart();
+        onLeave(origin, destination) {
+              var child = this.$refs.erfolge;
+              var hem = this.$refs.hemnisse;
+          if(destination.anchor.indexOf("02") === 0 && this.locked3 === true) {
+              child.animStart();
+          }
+          if(destination.anchor.indexOf("04") === 0 && this.locked3 === true) {
+              hem.animStart();
+          }
         }
       },
       legendeInput(id) {
@@ -320,7 +328,7 @@
         this.changingChoice = !this.changingChoice;
       }
     }
-  }
+  
 </script>
 
 <style>
