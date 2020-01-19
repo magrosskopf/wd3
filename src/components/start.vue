@@ -315,8 +315,6 @@
             document.getElementsByTagName('circle')
 
             let radiusArray = [];
-            console.log( 'länge' + document.getElementsByTagName('circle').length)
-            
 
             for(let i = 0; i < document.getElementsByTagName('circle').length; i++){
                 radiusArray.push(document.getElementsByTagName('circle')[i].getAttribute('r'))
