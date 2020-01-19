@@ -318,7 +318,7 @@
           if(destination.anchor.indexOf("03") === 0 && this.locked3 === true) {
               child.animStart();
           }
-          if(destination.anchor.indexOf("05") === 0 && this.locked3 === true) {
+          if(destination.anchor.indexOf("04") === 0 && this.locked3 === true) {
               hem.animStart();
           }
         }
