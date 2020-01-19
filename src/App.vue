@@ -312,15 +312,15 @@
       this.locked3 = true;
     },
     methods: {
-        onLeave(origin, destination) {
-              var child = this.$refs.erfolge;
-              var hem = this.$refs.hemnisse;
-          if(destination.anchor.indexOf("02") === 0 && this.locked3 === true) {
-              child.animStart();
-          }
-          if(destination.anchor.indexOf("04") === 0 && this.locked3 === true) {
-              hem.animStart();
-          }
+      onLeave(origin, destination) {
+        var child = this.$refs.erfolge;
+        var hem = this.$refs.hemnisse;
+        
+        if(destination.anchor.indexOf("02") === 0 && this.locked3 === true) {
+            child.animStart();
+        }
+        if(destination.anchor.indexOf("04") === 0 && this.locked3 === true) {
+            hem.animStart();
         }
       },
       legendeInput(id) {
@@ -328,6 +328,7 @@
         this.changingChoice = !this.changingChoice;
       }
     }
+  }
   
 </script>
 
