@@ -173,8 +173,8 @@ export default {
 </script>
  <style scoped>
     div#chart {
-        width: 30vw;
-        margin-left: 5vw;
+        width: 100%;
+        margin-left: 3vw;
     }
 
     #hemmnisse {
