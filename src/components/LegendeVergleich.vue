@@ -15,11 +15,11 @@
     <div class="circle border" id="handel" ref="handel" v-on:click="legend($event)">
         <img src="../assets/icons/05_handel.svg">
     </div>
-    <div class="circle border" id="fahrzeugbau" ref="fahrzeugbau" v-on:click="legend($event)">
-        <img src="../assets/icons/06_fahrzeugbau.svg">
-    </div>
     <div class="circle border" id="gesundheitswesen" ref="gesundheitswesen" v-on:click="legend($event)">
         <img src="../assets/icons/07_gesundheitswesen.svg">
+    </div>
+    <div class="circle border" id="fahrzeugbau" ref="fahrzeugbau" v-on:click="legend($event)">
+        <img src="../assets/icons/06_fahrzeugbau.svg">
     </div>
     <div class="circle border" id="wissenschaft" ref="wissenschaft" v-on:click="legend($event)">
         <img src="../assets/icons/08_wissenschaft.svg">
@@ -48,8 +48,6 @@ export default {
     methods: {
         legend(event) {
             const activeClass = event.currentTarget.id + 'Active'
-
-            console.log(this.$refs[event.currentTarget.id].classList.contains(activeClass));
 
             if (this.$refs[event.currentTarget.id].classList.contains(activeClass)) {
                 this.$refs[event.currentTarget.id].classList.remove(activeClass);
