@@ -6,8 +6,8 @@
                     Die Erfolge der Digitalisierung
                 </h2>
                 <p style="color: white;">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                    labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                    Eine Übersicht der fünf größten Faktoren,<br>
+                    die aus Unternehmenssicht die Digitalisierung hemmen.
                 </p>
             </b-col>
         </b-row>
