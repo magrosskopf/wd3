@@ -242,7 +242,7 @@
         </b-container>
       </div>
 
-      <div class="section bg-lightBlue">
+      <div class="section gradient-impressum">
         <impressum></impressum>
       </div>
 
@@ -420,6 +420,11 @@ $gradient-color-end: #DFEDF4;
     background-image: linear-gradient(#EFF6F9, #DFEDF4);
   }
 
+  .gradient-impressum {
+    background-image: linear-gradient(#DFEDF4, #FFFFFF);
+  }
+
+
   .header-image {
     margin-top: -60px;
   }
@@ -512,6 +517,50 @@ $gradient-color-end: #DFEDF4;
     color: #00071F;
     font-family: 'Orbitron', sans-serif;
     font-weight: 400;
+  }
+
+  /* Highlight active Nav */
+  .fp-viewing-01 #fp-nav ul li:nth-child(2) span{
+    font-weight: bold;
+  }
+  .fp-viewing-02 #fp-nav ul li:nth-child(3) span{
+    font-weight: bold;
+  }
+  .fp-viewing-03-0 #fp-nav ul li:nth-child(4) span{
+    font-weight: bold;
+  }
+  .fp-viewing-03-1 #fp-nav ul li:nth-child(4) span{
+    font-weight: bold;
+  }
+  .fp-viewing-03-2 #fp-nav ul li:nth-child(4) span{
+    font-weight: bold;
+  }
+  .fp-viewing-03-3 #fp-nav ul li:nth-child(4) span{
+    font-weight: bold;
+  }
+  .fp-viewing-03-4 #fp-nav ul li:nth-child(4) span{
+    font-weight: bold;
+  }
+  .fp-viewing-04 #fp-nav ul li:nth-child(5) span{
+    font-weight: bold;
+  }
+  .fp-viewing-05-0 #fp-nav ul li:nth-child(6) span{
+    font-weight: bold;
+  }
+  .fp-viewing-05-1 #fp-nav ul li:nth-child(6) span{
+    font-weight: bold;
+  }
+  .fp-viewing-05-2 #fp-nav ul li:nth-child(6) span{
+    font-weight: bold;
+  }
+  .fp-viewing-05-3 #fp-nav ul li:nth-child(6) span{
+    font-weight: bold;
+  }
+  .fp-viewing-05-4 #fp-nav ul li:nth-child(6) span{
+    font-weight: bold;
+  }
+  .fp-viewing-06 #fp-nav ul li:nth-child(7) span{
+    font-weight: bold;
   }
   
   /* Section 4 */
