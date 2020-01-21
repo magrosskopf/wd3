@@ -32,32 +32,31 @@
             class="cls-3"><text class="cls-4" transform="translate(311.08 245)">PROJEKTINFORMATIONEN</text><text
               class="cls-4" transform="translate(276.42 299)">Titel: </text><text class="cls-5"
               transform="translate(331.61 299)">Potenziale der Digitalisierung</text><text class="cls-4"
-              transform="translate(229.24 326)">Studenten:</text><text class="cls-5" transform="translate(339.04 326)">
+              transform="translate(229.24 326)">Studenten: </text><text class="cls-5" transform="translate(344 326)">
               <tspan xml:space="preserve">Michelle Schmidt, Nathalie Wolf,</tspan>
             </text><text class="cls-5" transform="translate(215.54 353)">Tamira
               Wolpert, Marius Großkopf, Henning Löwe</text><text class="cls-4" transform="translate(282.65 380)">Dozent:</text><text class="cls-5"
-              transform="translate(358.94 380)">
+              transform="translate(363 380)">
               <tspan xml:space="preserve"> Dipl.-Des. Lothar B. Blum</tspan>
             </text><text class="cls-4" transform="translate(346.33 407)">Abgabe:</text><text class="cls-5"
-              transform="translate(426.34 407)">
+              transform="translate(430 407)">
               <tspan xml:space="preserve"> 28.01.2019</tspan>
             </text></g>
           <g id="GRUNDLAGE_FÜR_DIE_UMSETZUNG_Unsere_Website_basiert_auf_folgender_Studie:_Titel_Kapitel_Autoren_Erscheinungsdatum_Link_zur_Studie_Icons:_FontAwesome"
             data-name="GRUNDLAGE FÜR DIE UMSETZUNG Unsere Website basiert auf folgender Studie: Titel Kapitel Autoren Erscheinungsdatum Link zur Studie Icons: FontAwesome"
-            class="cls-3"><text class="cls-4" transform="translate(987.31 158)">GRUNDLAGE FÜR DIE UMSETZUNG</text><text
-              class="cls-5" transform="translate(947.69 212)">Unsere Website basiert auf folgender Studie:</text><text
-              class="cls-5" transform="translate(1136.27 239)">Titel</text><text class="cls-5"
-              transform="translate(1123.97 266)">Kapitel</text><text class="cls-5"
-              transform="translate(1118.13 293)">Autoren</text><text class="cls-5"
-              transform="translate(1063.23 320)">Erscheinungsdatum</text><text class="cls-5"
-              transform="translate(1087.38 347)">Link zur Studie</text><text class="cls-4"
-              transform="translate(1058.06 374)">Icons: </text><text class="cls-5"
-              transform="translate(1121.33 374)">FontAwesome</text></g>
+            class="cls-3"><text class="cls-4" transform="translate(987.31 158)">GRUNDLAGE FÜR DIE UMSETZUNG</text>
+            <text class="cls-5" transform="translate(1070 212)">Monitoring Report</text>
+            <text class="cls-5" transform="translate(1050 239)">Wirtschaft Digital 2018</text>
+            <text class="cls-4" transform="translate(970 266)">Herausgeber:</text>
+            <text class="cls-5" transform="translate(1110 266)">Bundesministerium für </text>
+            <text class="cls-5" transform="translate(1010 293)">Wirtschaft und Energie (BMWi)</text>
+            <text class="cls-5" transform="translate(1076 320)">Stand: Juli 2018</text>
+            <text class="cls-5" transform="translate(1100 347)"><a href="https://www.bmwi.de/Redaktion/DE/Publikationen/Digitale-Welt/monitoring-report-wirtschaft-digital-2018-langfassung.html">Zur Studie</a></text>
+            <text class="cls-4" transform="translate(1080 374)">Icons: </text>
+            <text class="cls-5" transform="translate(1145 374)">Flaticon</text></g>
           <g id="DHBW_Campus_Mosbach_Fachbereich_Onlinemedien" data-name="DHBW Campus Mosbach Fachbereich Onlinemedien"
             class="cls-3"><text class="cls-6" transform="translate(740.78 565)">DHBW Campus Mosbach</text><text
-              class="cls-6" transform="translate(736.7 589)">Fachbe<tspan class="cls-7" x="66.68" y="0">r</tspan>
-              <tspan x="72.98" y="0">eich Onlinemedien</tspan>
-            </text></g>
+              class="cls-6" transform="translate(736.7 589)">Fachbereich Onlinemedien</text></g>
           <g id="Ellipse_486" data-name="Ellipse 486">
             <circle class="cls-8" cx="139.5" cy="597.5" r="24.5" />
             <circle class="cls-9" cx="139.5" cy="597.5" r="22.5" />
