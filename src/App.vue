@@ -20,7 +20,9 @@
           <b-container class="bv-example-row">
             <b-row>
               <b-col cols="2" class="bubble-padding">
-                <img src="@/assets/unternehmen.svg" class="icon-bubble"/>
+                <div class="bubble">
+                  <img src="./assets/kategory/Kundenkommunikation.svg" class="bubble-icon"/>
+                </div>
               </b-col>
               <b-col cols="8" offset="1">
                 <h3 class="h2-styleSlide">
@@ -39,11 +41,15 @@
           <b-container class="bv-example-row">
             <b-row>
               <b-col cols="2" class="bubble-padding">
-                <img src="@/assets/unternehmen.svg" class="icon-bubble"/>
+                <div class="bubble">
+                  <img src="./assets/kategory/Wissen.svg" class="bubble-icon"/>
+                </div>
               </b-col>
               <b-col cols="8" offset="1">
-                <h3 class="h2-styleSlide" style="padding: 0 0 30px 0;">
-                  Aufbau von erfolgsrelevantem Wissen
+                <h3 class="h2-styleSlide">
+                  <!-- style="padding: 0 0 30px 0;" -->
+                  <!-- Aufbau von erfolgsrelevantem Wissen -->
+                  Erfolgsrelevantes Wissen
                 </h3>
               </b-col>
             </b-row>
@@ -58,7 +64,9 @@
           <b-container class="bv-example-row">
             <b-row>
               <b-col cols="2" class="bubble-padding">
-                <img src="@/assets/unternehmen.svg" class="icon-bubble"/>
+                <div class="bubble">
+                  <img src="./assets/kategory/Qualität.svg" class="bubble-icon"/>
+                </div>
               </b-col>
               <b-col cols="8" offset="1">
                 <h3 class="h2-styleSlide">
@@ -77,7 +85,9 @@
           <b-container class="bv-example-row">
             <b-row>
               <b-col cols="2" class="bubble-padding">
-                <img src="@/assets/unternehmen.svg" class="icon-bubble"/>
+                <div class="bubble">
+                  <img src="./assets/kategory/Innovation.svg" class="bubble-icon"/>
+                </div>
               </b-col>
               <b-col cols="8" offset="1">
                 <h3 class="h2-styleSlide">
@@ -96,11 +106,15 @@
           <b-container class="bv-example-row">
             <b-row>
               <b-col cols="2" class="bubble-padding">
-                <img src="@/assets/unternehmen.svg" class="icon-bubble"/>
+                <div class="bubble">
+                  <img src="./assets/kategory/Märkte.svg" class="bubble-icon"/>
+                </div>
               </b-col>
               <b-col cols="8" offset="1">
-                <h3 class="h2-styleSlide" style="padding: 0 0 30px 0;">
-                  Erschließung neuer Märkte oder Kundengruppen
+                <h3 class="h2-styleSlide">
+                  <!--  style="padding: 0 0 30px 0;" -->
+                  <!-- Erschließung neuer Märkte oder Kundengruppen -->
+                  Erschließung neuer Märkte
                 </h3>
               </b-col>
             </b-row>
@@ -117,12 +131,14 @@
         <hemnisse ref="hemnisse" />
       </div>
 
-      <div class="section 06">
+      <div class="section 06 bg-darkBlue">
         <div class="slide bg-darkBlue">
           <b-container class="bv-example-row">
             <b-row>
               <b-col cols="2" class="bubble-padding">
-                <img src="@/assets/unternehmen.svg" class="icon-bubble"/>
+                <div class="bubble">
+                  <img src="./assets/kategory/Breitband.svg" class="bubble-icon"/>
+                </div>
               </b-col>
               <b-col cols="8" offset="1">
                 <h3 class="h2-styleSlide" style="color: white;">
@@ -141,11 +157,13 @@
           <b-container class="bv-example-row">
             <b-row>
               <b-col cols="2" class="bubble-padding">
-                <img src="@/assets/unternehmen.svg" class="icon-bubble"/>
+                <div class="bubble">
+                  <img src="./assets/kategory/Zeitaufwand.svg" class="bubble-icon"/>
+                </div>
               </b-col>
               <b-col cols="8" offset="1">
-                <h3 class="h2-styleSlide" style="color: white; padding: 50px 0 80px 0;">
-                  Zeitaufwand zu hoch
+                <h3 class="h2-styleSlide" style="color: white;">
+                  Zeitaufwand<br>zu hoch
                 </h3>
               </b-col>
             </b-row>
@@ -160,7 +178,9 @@
           <b-container class="bv-example-row">
             <b-row>
               <b-col cols="2" class="bubble-padding">
-                <img src="@/assets/unternehmen.svg" class="icon-bubble"/>
+                <div class="bubble">
+                  <img src="./assets/kategory/KnowHow.svg" class="bubble-icon"/>
+                </div>
               </b-col>
               <b-col cols="8" offset="1">
                 <h3 class="h2-styleSlide" style="color: white;">
@@ -179,7 +199,9 @@
           <b-container class="bv-example-row">
             <b-row>
               <b-col cols="2" class="bubble-padding">
-                <img src="@/assets/unternehmen.svg" class="icon-bubble"/>
+                <div class="bubble">
+                  <img src="./assets/kategory/Kosten.svg" class="bubble-icon"/>
+                </div>
               </b-col>
               <b-col cols="8" offset="1">
                 <h3 class="h2-styleSlide" style="color: white;">
@@ -198,11 +220,13 @@
           <b-container class="bv-example-row">
             <b-row>
               <b-col cols="2" class="bubble-padding">
-                <img src="@/assets/unternehmen.svg" class="icon-bubble"/>
+                <div class="bubble">
+                  <img src="./assets/kategory/Datenschutz.svg" class="bubble-icon"/>
+                </div>
               </b-col>
               <b-col cols="8" offset="1">
                 <h3 class="h2-styleSlide" style="color: white;">
-                  Keine Notwendigkeit erkennbar
+                  Zu strikte Datenschutzregeln
                 </h3>
               </b-col>
             </b-row>
@@ -216,6 +240,25 @@
       </div>
 
       <div class="section 07" id="branchenvergleich">
+        <div id="overlay">
+          <div id="overlay-bubble">
+            <div id="overlay-cancel" @click="cancel">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                  <path class="st0" d="M415.4,495.4L256,336L96.6,495.4c-22.1,22.1-57.9,22.1-80,0c-22.1-22.1-22.1-57.9,0-80L176,256L16.6,96.6
+                  c-22.1-22.1-22.1-57.9,0-80c22.1-22.1,57.9-22.1,80,0L256,176L415.4,16.6c22.1-22.1,57.9-22.1,80,0c22.1,22.1,22.1,57.9,0,80
+                  L336,256l159.4,159.4c22.1,22.1,22.1,57.9,0,80C473.3,517.5,437.5,517.5,415.4,495.4z"/>
+              </svg>
+            </div>
+            <p>
+              <strong>Hier können Sie eine Branche oder verschiedene Branchen miteinander vergleichen.</strong>
+              <br><br>
+
+              Wählen Sie per Klick auf die unten stehenden Icons die entsprechenden Branchen aus, 
+              die Sie vergleichen möchten und erhalten Sie einen Überblick über die Erfolge und 
+              Hemmnisse der Digitalisierung.
+            </p>
+          </div>
+        </div>
         <b-container class="bv-example-row">
           <b-row>
             <b-col>
@@ -270,6 +313,7 @@
   import ErfolgChart from './components/ErfolgChart'
   import HemmnisseChart from './components/HemmnisseChart'
   import LegendeVergleich from './components/LegendeVergleich'
+  import { EventBus } from './others/eventBus'
 
   export default {
     name: 'app',
@@ -293,39 +337,46 @@
       HemmnisseChart,
       LegendeVergleich
     },
-    props: {
-      locked3: Boolean,
-    },
     data() {
       return {
         options: {
           navigation: true,
           onLeave: this.onLeave,
+          onSlideLeave: this.leaveSlide,
+          afterSlideLoad: this.afterSlideLoad,
           anchors: ['00', '01', '02', '03', '04', '05', '06', '07'],
-          scrollHorizontally: true
+          scrollHorizontally: true,
+          fadingEffect: 'slides'
         },
         legendChoice: '',
         changingChoice: false
       }
     },
-    created: function () {
-      this.locked3 = true;
-    },
     methods: {
       onLeave(origin, destination) {
-        var child = this.$refs.erfolge;
-        var hem = this.$refs.hemnisse;
-        
-        if(destination.anchor.indexOf("02") === 0 && this.locked3 === true) {
-            child.animStart();
-        }
-        if(destination.anchor.indexOf("04") === 0 && this.locked3 === true) {
-            hem.animStart();
-        }
+        EventBus.$emit('sectionChange', destination.anchor)
       },
+
+      leaveSlide(section, origin, destination) {
+        console.log("TCL: leaveSlide -> section, origin, destination", section, origin, destination)
+        EventBus.$emit('sectionSlide', section.anchor)
+        EventBus.$emit('slideChange', destination.index)
+      },
+
+      afterSlideLoad(section, origin, destination) {
+        console.log("TCL: afterSlideLoad -> section, origin, destination", section, origin, destination)
+        EventBus.$emit('afterLoad', origin.index)
+      },
+
       legendeInput(id) {
         this.legendChoice = id;
         this.changingChoice = !this.changingChoice;
+      },
+
+      cancel() {
+        const elem = document.getElementById('overlay').style;
+        elem.display = 'none';
+
       }
     }
   }
@@ -438,8 +489,81 @@ $gradient-color-end: #DFEDF4;
     justify-content: center;
   }
 
+  .bubble {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bubble-icon {
+    width: 50%;
+    height: 50%;
+  }
+
   .bubble-padding {
     margin: 0 0 0 -70px;
+  }
+
+  #overlay {
+    background: rgba(6,19,75,.4);
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+
+  #overlay p{
+    color: #08164A;
+    padding: 40px;
+  }
+
+  #overlay-bubble {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #overlay-cancel {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #C8DAE3;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 50px;
+    z-index: 1001;
+  }
+
+  #overlay-cancel:hover {
+    background-color: #08164A;
+    border: #C8DAE3 5px solid;
+  }
+
+  #overlay-cancel svg{
+    width: 40%;
+    height: 40%;
+    fill: #08164A;
+  }
+
+  #overlay-cancel:hover svg{
+    fill: #C8DAE3;
   }
 
   #erfolgHeadline h3 {
@@ -653,4 +777,21 @@ $gradient-color-end: #DFEDF4;
   .fp-viewing-06 #fp-nav ul li a{
     color: white;
   }
+
+  .fp-slide {
+    width: 100%!important;
+    position: absolute;
+    left: 0;
+    top: 0;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 0;
+    transition: all .7s ease-in-out;
+}
+
+.fp-slide.active {
+	visibility: visible;
+	opacity: 1;
+	z-index: 1;
+}
 </style>
