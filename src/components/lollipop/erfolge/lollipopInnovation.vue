@@ -119,16 +119,34 @@
     credits: {
         enabled: false
     },
-    series: [{
-        data: [70,64,64,55,54,52,50,48,39,38,25]
-    }]
+    series: []
   }
+
+  import { EventBus } from "../../../others/eventBus.js";
 
   export default {
     data() {
       return {
         options: data
       };
+    },
+    mounted() {
+
+      EventBus.$on('slideChange', value => {
+        if(value === 3) {
+          this.options.series = [
+            {
+              data: [70,64,64,55,54,52,50,48,39,38,25]
+            }
+          ]
+        }
+      });
+
+      EventBus.$on('afterLoad', value => {
+        if(value === 3) {
+          this.options.series = []
+        }
+      });
     }
   };
 </script>

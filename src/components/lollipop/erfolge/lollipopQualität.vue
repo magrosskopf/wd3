@@ -48,6 +48,7 @@
       title: {
         text: null
       },
+      showEmpty: true,
       labels: {
         style: {
           color: '#101C4B',
@@ -119,16 +120,34 @@
     credits: {
         enabled: false
     },
-    series: [{
-        data: [72,63,62,56,54,54,50,50,40,38,25]
-    }]
+    series: []
   }
+
+  import { EventBus } from "../../../others/eventBus.js";
 
   export default {
     data() {
       return {
         options: data
       };
+    },
+    mounted() {
+
+      EventBus.$on('slideChange', value => {
+        if(value === 2) {
+          this.options.series = [
+            {
+              data: [72,63,62,56,54,54,50,50,40,38,25]
+            }
+          ]
+        }
+      });
+
+      EventBus.$on('afterLoad', value => {
+        if(value === 2) {
+          this.options.series = []
+        }
+      });
     }
   };
 </script>
