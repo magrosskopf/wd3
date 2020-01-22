@@ -9,10 +9,7 @@ const data = {
     chart: {
         inverted: true,
         backgroundColor: '#DFEDF5',
-        style: {
-            color: '#143B7C',
-            fontSize: '13px'
-        }
+        ignoreHiddenSeries: false
     },
 
     data: {

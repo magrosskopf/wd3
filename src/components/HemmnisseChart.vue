@@ -7,8 +7,9 @@
 <script>
 const data = {
     chart: {
-      inverted: true,
-      backgroundColor: '#08164A'
+        inverted: true,
+        backgroundColor: '#08164A',
+        ignoreHiddenSeries: false
     },
 
     data: {
