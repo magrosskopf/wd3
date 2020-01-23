@@ -15,9 +15,9 @@
             <li><a href="#03/4"><div class="dot"></div></a></li>
           </ul>
         </li>
-        <li href="#04"><a>04</a></li>
-        <li href="#05">
-          <a>05</a>
+        <li><a href="#04">04</a></li>
+        <li>
+          <a href="#05">05</a>
           <ul class="nav-slides">
             <li><a href="#05"><div class="dot"></div></a></li>
             <li><a href="#05/1"><div class="dot"></div></a></li>
@@ -26,7 +26,7 @@
             <li><a href="#05/4"><div class="dot"></div></a></li>
           </ul>
         </li>
-        <li href="#06"><a>06</a></li>
+        <li><a href="#06">06</a></li>
       </ul>
     </nav>
 
