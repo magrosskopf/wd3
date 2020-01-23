@@ -1,5 +1,34 @@
 <template>
   <div id="app">
+    <nav id="my-nav" ref="my-nav">
+      <ul>
+        <li><a href="#00"><svg id="home-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.61 26.67"><g id="Ebene_2" data-name="Ebene 2"><g id="Ebene_1-2" data-name="Ebene 1"><path id="Icon_material-home" data-name="Icon material-home" class="cls-1" d="M13.3,26.17v-9h6v9h7.5v-12h4.5L16.3.67l-15,13.5H5.8v12Z"/></g></g></svg></a></li>
+        <li><a href="#01">01</a></li>
+        <li><a href="#02">02</a></li>
+        <li>
+          <a href="#03">03</a>
+          <ul class="nav-slides">
+            <li><a href="#03"><div class="dot"></div></a></li>
+            <li><a href="#03/1"><div class="dot"></div></a></li>
+            <li><a href="#03/2"><div class="dot"></div></a></li>
+            <li><a href="#03/3"><div class="dot"></div></a></li>
+            <li><a href="#03/4"><div class="dot"></div></a></li>
+          </ul>
+        </li>
+        <li href="#04"><a>04</a></li>
+        <li href="#05">
+          <a>05</a>
+          <ul class="nav-slides">
+            <li><a href="#05"><div class="dot"></div></a></li>
+            <li><a href="#05/1"><div class="dot"></div></a></li>
+            <li><a href="#05/2"><div class="dot"></div></a></li>
+            <li><a href="#05/3"><div class="dot"></div></a></li>
+            <li><a href="#05/4"><div class="dot"></div></a></li>
+          </ul>
+        </li>
+        <li href="#06"><a>06</a></li>
+      </ul>
+    </nav>
 
     <full-page ref="fullpage" :options="options" id="fullpage">
 
@@ -340,13 +369,14 @@
     data() {
       return {
         options: {
-          navigation: true,
           onLeave: this.onLeave,
+          afterRender: this.afterRender,
           onSlideLeave: this.leaveSlide,
           afterSlideLoad: this.afterSlideLoad,
           anchors: ['00', '01', '02', '03', '04', '05', '06', '07'],
           scrollHorizontally: true,
-          fadingEffect: 'slides'
+          fadingEffect: 'slides',
+          slidesNavigation: true,
         },
         legendChoice: '',
         changingChoice: false
@@ -357,14 +387,17 @@
         EventBus.$emit('sectionChange', destination.anchor)
       },
 
+      afterRender() {
+      },
+
       leaveSlide(section, origin, destination) {
-        console.log("TCL: leaveSlide -> section, origin, destination", section, origin, destination)
         EventBus.$emit('sectionSlide', section.anchor)
         EventBus.$emit('slideChange', destination.index)
       },
 
       afterSlideLoad(section, origin, destination) {
-        console.log("TCL: afterSlideLoad -> section, origin, destination", section, origin, destination)
+        console.log(section, origin, destination)
+        
         EventBus.$emit('afterLoad', origin.index)
       },
 
@@ -376,8 +409,10 @@
       cancel() {
         const elem = document.getElementById('overlay').style;
         elem.display = 'none';
-
       }
+    },
+    mounted() {
+      
     }
   }
   
@@ -594,190 +629,6 @@ $gradient-color-end: #DFEDF4;
     display: none;
   }
 
-  #fp-nav {
-    position: fixed;
-    top: 50%;
-    right: 3%;
-  }
-
-  #fp-nav ul {
-    text-align: center;
-  }
-
-  #fp-nav ul li {
-    list-style: none;
-  }
-
-  #fp-nav ul li:after {
-    content: "";
-    display: block;
-    width: 2px;
-    height: 45px;
-    background: #00071F;
-    margin: 6px 0 6px 12px;
-  }
-
-  #fp-nav ul li:after {
-    content: "";
-    display: block;
-    width: 2px;
-    height: 45px;
-    background: #00071F;
-    margin: 6px 0 6px 12px;
-  }
-
-  #fp-nav ul li:nth-child(7):after {
-    content: "";
-    display: none;
-  }
-
-  #fp-nav ul li:nth-child(8) {
-    content: "";
-    display: none;
-  }
-
-  #fp-nav ul li a{
-    text-decoration: none;
-    color: #00071F;
-    font-family: 'Orbitron', sans-serif;
-    font-weight: 400;
-  }
-
-  /* Highlight active Nav */
-  .fp-viewing-01 #fp-nav ul li:nth-child(2) span{
-    font-weight: bold;
-  }
-  .fp-viewing-02 #fp-nav ul li:nth-child(3) span{
-    font-weight: bold;
-  }
-  .fp-viewing-03-0 #fp-nav ul li:nth-child(4) span{
-    font-weight: bold;
-  }
-  .fp-viewing-03-1 #fp-nav ul li:nth-child(4) span{
-    font-weight: bold;
-  }
-  .fp-viewing-03-2 #fp-nav ul li:nth-child(4) span{
-    font-weight: bold;
-  }
-  .fp-viewing-03-3 #fp-nav ul li:nth-child(4) span{
-    font-weight: bold;
-  }
-  .fp-viewing-03-4 #fp-nav ul li:nth-child(4) span{
-    font-weight: bold;
-  }
-  .fp-viewing-04 #fp-nav ul li:nth-child(5) span{
-    font-weight: bold;
-  }
-  .fp-viewing-05-0 #fp-nav ul li:nth-child(6) span{
-    font-weight: bold;
-  }
-  .fp-viewing-05-1 #fp-nav ul li:nth-child(6) span{
-    font-weight: bold;
-  }
-  .fp-viewing-05-2 #fp-nav ul li:nth-child(6) span{
-    font-weight: bold;
-  }
-  .fp-viewing-05-3 #fp-nav ul li:nth-child(6) span{
-    font-weight: bold;
-  }
-  .fp-viewing-05-4 #fp-nav ul li:nth-child(6) span{
-    font-weight: bold;
-  }
-  .fp-viewing-06 #fp-nav ul li:nth-child(7) span{
-    font-weight: bold;
-  }
-  
-  /* Section 4 */
-  .fp-viewing-04 #fp-nav ul li:after {
-    background: white;
-  }
-
-  .fp-viewing-04 #fp-nav ul li:after {
-    background: white;
-  }
-
-  .fp-viewing-04 #fp-nav ul li a{
-    color: white;
-  }
-
-  /* Section 5-0 */
-  .fp-viewing-05-0 #fp-nav ul li:after {
-    background: white;
-  }
-
-  .fp-viewing-05-0 #fp-nav ul li:after {
-    background: white;
-  }
-
-  .fp-viewing-05-0 #fp-nav ul li a{
-    color: white;
-  }
-
-  /* Section 5-1 */
-  .fp-viewing-05-1 #fp-nav ul li:after {
-    background: white;
-  }
-
-  .fp-viewing-05-1 #fp-nav ul li:after {
-    background: white;
-  }
-
-  .fp-viewing-05-1 #fp-nav ul li a{
-    color: white;
-  }
-
-  /* Section 5-2 */
-  .fp-viewing-05-2 #fp-nav ul li:after {
-    background: white;
-  }
-
-  .fp-viewing-05-2 #fp-nav ul li:after {
-    background: white;
-  }
-
-  .fp-viewing-05-2 #fp-nav ul li a{
-    color: white;
-  }
-
-  /* Section 5-3 */
-  .fp-viewing-05-3 #fp-nav ul li:after {
-    background: white;
-  }
-
-  .fp-viewing-05-3 #fp-nav ul li:after {
-    background: white;
-  }
-
-  .fp-viewing-05-3 #fp-nav ul li a{
-    color: white;
-  }
-
-  /* Section 5-4 */
-  .fp-viewing-05-4 #fp-nav ul li:after {
-    background: white;
-  }
-
-  .fp-viewing-05-4 #fp-nav ul li:after {
-    background: white;
-  }
-
-  .fp-viewing-05-4 #fp-nav ul li a{
-    color: white;
-  }
-
-  /* Section 6 */
-  .fp-viewing-06 #fp-nav ul li:after {
-    background: white;
-  }
-
-  .fp-viewing-06 #fp-nav ul li:after {
-    background: white;
-  }
-
-  .fp-viewing-06 #fp-nav ul li a{
-    color: white;
-  }
-
   .fp-slide {
     width: 100%!important;
     position: absolute;
@@ -787,11 +638,431 @@ $gradient-color-end: #DFEDF4;
     opacity: 0;
     z-index: 0;
     transition: all .7s ease-in-out;
-}
+  }
 
-.fp-slide.active {
-	visibility: visible;
-	opacity: 1;
-	z-index: 1;
-}
+  .fp-slide.active {
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+  }
+
+  /* Custom Navigation */
+
+  #my-nav {
+    font-family: 'Orbitron', sans-serif;
+    position: fixed;
+    z-index: 9999;
+    right: 3%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+
+  #my-nav ul li {
+    list-style: none;
+  }
+
+  #my-nav ul li:after {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 45px;
+    background: #00071F;
+    margin: 6px 0 6px 12px;
+  }
+
+  #my-nav ul li:nth-child(7):after {
+    content: "";
+    display: none;
+  }
+
+  #my-nav ul li a{
+    text-decoration: none;
+    color: #00071F;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 400;
+  }
+
+  #home-icon {
+    fill: transparent;
+    stroke: #00071F;
+    stroke-width: 2px;
+    width: 27px;
+  }
+
+  .dot {
+    background-color: #00071F;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+  }
+
+  .nav-slides {
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-slides li{
+    width: 27px;
+    height: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-slides li:hover .dot {
+    width: 8px;
+    height: 8px;
+  }
+
+  .nav-slides li:after {
+    content: "" !important;
+    display: none !important;
+  }
+
+  #my-nav .nav-slides {
+    display: none;
+  }
+
+  /* Highlight active Nav */
+  .fp-viewing-00 #home-icon {
+    fill: #00071F;
+  }
+  .fp-viewing-01 #my-nav ul li:nth-child(2) a{
+    font-weight: bold;
+  }
+  .fp-viewing-02 #my-nav ul li:nth-child(3) a{
+    font-weight: bold;
+  }
+  .fp-viewing-03-0 #my-nav ul li:nth-child(4) a{
+    font-weight: bold;
+  }
+  .fp-viewing-03-1 #my-nav ul li:nth-child(4) a{
+    font-weight: bold;
+  }
+  .fp-viewing-03-2 #my-nav ul li:nth-child(4) a{
+    font-weight: bold;
+  }
+  .fp-viewing-03-3 #my-nav ul li:nth-child(4) a{
+    font-weight: bold;
+  }
+  .fp-viewing-03-4 #my-nav ul li:nth-child(4) a{
+    font-weight: bold;
+  }
+  .fp-viewing-04 #my-nav ul li:nth-child(5) a{
+    font-weight: bold;
+  }
+  .fp-viewing-05-0 #my-nav ul li:nth-child(6) a{
+    font-weight: bold;
+  }
+  .fp-viewing-05-1 #my-nav ul li:nth-child(6) a{
+    font-weight: bold;
+  }
+  .fp-viewing-05-2 #my-nav ul li:nth-child(6) a{
+    font-weight: bold;
+  }
+  .fp-viewing-05-3 #my-nav ul li:nth-child(6) a{
+    font-weight: bold;
+  }
+  .fp-viewing-05-4 #my-nav ul li:nth-child(6) a{
+    font-weight: bold;
+  }
+  .fp-viewing-06 #my-nav ul li:nth-child(7) a{
+    font-weight: bold;
+  }
+
+  /* Section 3-0 */
+  .fp-viewing-03-0 #my-nav ul li:nth-child(4):after {
+    content: "";
+    display: none;
+  }
+
+  .fp-viewing-03-0 #my-nav ul li:nth-child(4) .nav-slides {
+    display: inline;
+  }
+
+  .fp-viewing-03-0 #my-nav .nav-slides li:nth-child(1) .dot{
+    width: 8px;
+    height: 8px;
+  }
+
+  /* Section 3-1 */
+  .fp-viewing-03-1 #my-nav ul li:nth-child(4):after {
+    content: "";
+    display: none;
+  }
+
+  .fp-viewing-03-1 #my-nav ul li:nth-child(4) .nav-slides {
+    display: inline;
+  }
+
+  .fp-viewing-03-1 #my-nav .nav-slides li:nth-child(2) .dot{
+    width: 8px;
+    height: 8px;
+  }
+
+  /* Section 3-2 */
+  .fp-viewing-03-2 #my-nav ul li:nth-child(4):after {
+    content: "";
+    display: none;
+  }
+
+  .fp-viewing-03-2 #my-nav ul li:nth-child(4) .nav-slides {
+    display: inline;
+  }
+
+  .fp-viewing-03-2 #my-nav .nav-slides li:nth-child(3) .dot{
+    width: 8px;
+    height: 8px;
+  }
+
+  /* Section 3-3 */
+  .fp-viewing-03-3 #my-nav ul li:nth-child(4):after {
+    content: "";
+    display: none;
+  }
+
+  .fp-viewing-03-3 #my-nav ul li:nth-child(4) .nav-slides {
+    display: inline;
+  }
+
+  .fp-viewing-03-3 #my-nav .nav-slides li:nth-child(4) .dot{
+    width: 8px;
+    height: 8px;
+  }
+
+  /* Section 3-4 */
+  .fp-viewing-03-4 #my-nav ul li:nth-child(4):after {
+    content: "";
+    display: none;
+  }
+
+  .fp-viewing-03-4 #my-nav ul li:nth-child(4) .nav-slides {
+    display: inline;
+  }
+
+  .fp-viewing-03-4 #my-nav .nav-slides li:nth-child(5) .dot{
+    width: 8px;
+    height: 8px;
+  }
+
+  /* Section 4 */
+  .fp-viewing-04 #home-icon {
+    stroke: white;
+  }
+
+  .fp-viewing-04 #my-nav ul li:after {
+    background: white;
+  }
+
+  .fp-viewing-04 #my-nav ul li:after {
+    background: white;
+  }
+
+  .fp-viewing-04 #my-nav ul li a{
+    color: white;
+  }
+
+  /* Section 5-0 */
+  .fp-viewing-05-0 #home-icon {
+    stroke: white;
+  }
+
+  .fp-viewing-05-0 #my-nav ul li:after {
+    background: white;
+  }
+
+  .fp-viewing-05-0 #my-nav ul li:after {
+    background: white;
+  }
+
+  .fp-viewing-05-0 #my-nav ul li a{
+    color: white;
+  }
+
+  .fp-viewing-05-0 #my-nav ul li:nth-child(6):after {
+    content: "";
+    display: none;
+    background: white;
+  }
+
+  .fp-viewing-05-0 #my-nav ul li:nth-child(6) .nav-slides {
+    display: inline;
+    background: white;
+  }
+
+  .fp-viewing-05-0 #my-nav .nav-slides .dot{
+    background: white;
+  }
+
+  .fp-viewing-05-0 #my-nav .nav-slides li:nth-child(1) .dot{
+    width: 8px;
+    height: 8px;
+  }
+
+  /* Section 5-1 */
+  .fp-viewing-05-1 #home-icon {
+    stroke: white;
+  }
+
+  .fp-viewing-05-1 #my-nav ul li:after {
+    background: white;
+  }
+
+  .fp-viewing-05-1 #my-nav ul li:after {
+    background: white;
+  }
+
+  .fp-viewing-05-1 #my-nav ul li a{
+    color: white;
+  }
+  
+  .fp-viewing-05-1 #my-nav ul li:nth-child(6):after {
+    content: "";
+    display: none;
+    background: white;
+  }
+
+  .fp-viewing-05-1 #my-nav ul li:nth-child(6) .nav-slides {
+    display: inline;
+    background: white;
+  }
+
+  .fp-viewing-05-1 #my-nav .nav-slides .dot{
+    background: white;
+  }
+
+  .fp-viewing-05-1 #my-nav .nav-slides li:nth-child(2) .dot{
+    width: 8px;
+    height: 8px;
+  }
+
+  /* Section 5-2 */
+  .fp-viewing-05-2 #home-icon {
+    stroke: white;
+  }
+  
+  .fp-viewing-05-2 #my-nav ul li:after {
+    background: white;
+  }
+
+  .fp-viewing-05-2 #my-nav ul li:after {
+    background: white;
+  }
+
+  .fp-viewing-05-2 #my-nav ul li a{
+    color: white;
+  }
+  
+  .fp-viewing-05-2 #my-nav ul li:nth-child(6):after {
+    content: "";
+    display: none;
+    background: white;
+  }
+
+  .fp-viewing-05-2 #my-nav ul li:nth-child(6) .nav-slides {
+    display: inline;
+    background: white;
+  }
+
+  .fp-viewing-05-2 #my-nav .nav-slides .dot{
+    background: white;
+  }
+
+  .fp-viewing-05-2 #my-nav .nav-slides li:nth-child(3) .dot{
+    width: 8px;
+    height: 8px;
+  }
+
+  /* Section 5-3 */
+  .fp-viewing-05-3 #home-icon {
+    stroke: white;
+  }
+  
+  .fp-viewing-05-3 #my-nav ul li:after {
+    background: white;
+  }
+
+  .fp-viewing-05-3 #my-nav ul li:after {
+    background: white;
+  }
+
+  .fp-viewing-05-3 #my-nav ul li a{
+    color: white;
+  }
+  
+  .fp-viewing-05-3 #my-nav ul li:nth-child(6):after {
+    content: "";
+    display: none;
+    background: white;
+  }
+
+  .fp-viewing-05-3 #my-nav ul li:nth-child(6) .nav-slides {
+    display: inline;
+    background: white;
+  }
+
+  .fp-viewing-05-3 #my-nav .nav-slides .dot{
+    background: white;
+  }
+
+  .fp-viewing-05-3 #my-nav .nav-slides li:nth-child(4) .dot{
+    width: 8px;
+    height: 8px;
+  }
+
+  /* Section 5-4 */
+  .fp-viewing-05-4 #home-icon {
+    stroke: white;
+  }
+  
+  .fp-viewing-05-4 #my-nav ul li:after {
+    background: white;
+  }
+
+  .fp-viewing-05-4 #my-nav ul li:after {
+    background: white;
+  }
+
+  .fp-viewing-05-4 #my-nav ul li a{
+    color: white;
+  }
+  
+  .fp-viewing-05-4 #my-nav ul li:nth-child(6):after {
+    content: "";
+    display: none;
+    background: white;
+  }
+
+  .fp-viewing-05-4 #my-nav ul li:nth-child(6) .nav-slides {
+    display: inline;
+    background: white;
+  }
+
+  .fp-viewing-05-4 #my-nav .nav-slides .dot{
+    background: white;
+  }
+
+  .fp-viewing-05-4 #my-nav .nav-slides li:nth-child(5) .dot{
+    width: 8px;
+    height: 8px;
+    background: white;
+  }
+
+  /* Section 6 */
+  .fp-viewing-06 #home-icon {
+    stroke: white;
+  }
+  
+  .fp-viewing-06 #my-nav ul li:after {
+    background: white;
+  }
+
+  .fp-viewing-06 #my-nav ul li:after {
+    background: white;
+  }
+
+  .fp-viewing-06 #my-nav ul li a{
+    color: white;
+  }
 </style>
