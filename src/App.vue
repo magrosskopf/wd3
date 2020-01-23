@@ -370,7 +370,6 @@
       return {
         options: {
           onLeave: this.onLeave,
-          afterRender: this.afterRender,
           onSlideLeave: this.leaveSlide,
           afterSlideLoad: this.afterSlideLoad,
           anchors: ['00', '01', '02', '03', '04', '05', '06', '07'],
@@ -384,21 +383,17 @@
     },
     methods: {
       onLeave(origin, destination) {
-        EventBus.$emit('sectionChange', destination.anchor)
-      },
-
-      afterRender() {
+        EventBus.$emit('sectionChange', destination.anchor);
       },
 
       leaveSlide(section, origin, destination) {
-        EventBus.$emit('sectionSlide', section.anchor)
-        EventBus.$emit('slideChange', destination.index)
+        EventBus.$emit('sectionSlide', section.anchor);
+        EventBus.$emit('slideChange', destination.index);
       },
 
       afterSlideLoad(section, origin, destination) {
-        console.log(section, origin, destination)
-        
-        EventBus.$emit('afterLoad', origin.index)
+        console.log(destination);
+        EventBus.$emit('afterLoad', origin.index);
       },
 
       legendeInput(id) {

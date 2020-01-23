@@ -153,7 +153,11 @@
 
       EventBus.$on('afterLoad', value => {
         if(value === 0) {
-          this.options.series = []
+          EventBus.$on('slideChange', value => {
+            if(value !== 0) {
+              this.options.series = []
+            }
+          });
         }
       });
     }
