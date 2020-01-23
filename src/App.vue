@@ -690,6 +690,10 @@ $gradient-color-end: #DFEDF4;
     width: 27px;
   }
 
+  #home-icon:hover {
+    fill: #00071F;
+  }
+
   .dot {
     background-color: #00071F;
     width: 4px;
@@ -868,6 +872,10 @@ $gradient-color-end: #DFEDF4;
     stroke: white;
   }
 
+  .fp-viewing-05-0 #home-icon:hover {
+    fill: white;
+  }
+
   .fp-viewing-05-0 #my-nav ul li:after {
     background: white;
   }
@@ -903,6 +911,10 @@ $gradient-color-end: #DFEDF4;
   /* Section 5-1 */
   .fp-viewing-05-1 #home-icon {
     stroke: white;
+  }
+
+  .fp-viewing-05-1 #home-icon:hover {
+    fill: white;
   }
 
   .fp-viewing-05-1 #my-nav ul li:after {
@@ -941,6 +953,10 @@ $gradient-color-end: #DFEDF4;
   .fp-viewing-05-2 #home-icon {
     stroke: white;
   }
+
+  .fp-viewing-05-2 #home-icon:hover {
+    fill: white;
+  }
   
   .fp-viewing-05-2 #my-nav ul li:after {
     background: white;
@@ -977,6 +993,10 @@ $gradient-color-end: #DFEDF4;
   /* Section 5-3 */
   .fp-viewing-05-3 #home-icon {
     stroke: white;
+  }
+
+  .fp-viewing-05-3 #home-icon:hover {
+    fill: white;
   }
   
   .fp-viewing-05-3 #my-nav ul li:after {
@@ -1015,6 +1035,10 @@ $gradient-color-end: #DFEDF4;
   .fp-viewing-05-4 #home-icon {
     stroke: white;
   }
+
+  .fp-viewing-05-4 #home-icon:hover {
+    fill: white;
+  }
   
   .fp-viewing-05-4 #my-nav ul li:after {
     background: white;
@@ -1052,6 +1076,10 @@ $gradient-color-end: #DFEDF4;
   /* Section 6 */
   .fp-viewing-06 #home-icon {
     stroke: white;
+  }
+
+  .fp-viewing-06 #home-icon:hover {
+    fill: white;
   }
   
   .fp-viewing-06 #my-nav ul li:after {
