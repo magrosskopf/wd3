@@ -24,35 +24,35 @@
                             <path id="Pfad_2449" data-name="Pfad 2449" class="cls-1" d="M846.73,221.55l265.11-134,72.72-71.19"/>
                             
                             <g id="Ellipse_447" data-name="Ellipse 447">
-                                <circle class="cls-2" id="Ellipse_447a" cx="60.18" cy="585.62" r="31.71"/>
-                                <circle class="cls-3" id="Ellipse_447b" cx="60.18" cy="585.62" r="29.12"/>
+                                <circle class="cls-2" id="Ellipse_447a" cx="60.18" cy="585.62" r="0"/>
+                                <circle class="cls-3" id="Ellipse_447b" cx="60.18" cy="585.62" r="0"/>
                             </g>
-                            <circle id="Ellipse_448" data-name="Ellipse 448" class="cls-4" cx="60.83" cy="586.27" r="19.41"/>
-                            <circle id="Ellipse_449" data-name="Ellipse 449" class="cls-4" cx="13.59" cy="642.56" r="13.59"/>
-                            <circle id="Ellipse_450" data-name="Ellipse 450" class="cls-5" cx="181.19" cy="471.08" r="59.53"/>
-                            <circle id="Ellipse_451" data-name="Ellipse 451" class="cls-5" cx="574.62" cy="94.48" r="59.53"/>
-                            <circle id="Ellipse_452" data-name="Ellipse 452" class="cls-5" cx="867.11" cy="753.22" r="59.53"/>
-                            <circle id="Ellipse_453" data-name="Ellipse 453" class="cls-5" cx="1441.73" cy="525.44" r="59.53"/>
+                            <circle id="Ellipse_448" data-name="Ellipse 448" class="cls-4" cx="60.83" cy="586.27" r="0"/>
+                            <circle id="Ellipse_449" data-name="Ellipse 449" class="cls-4" cx="13.59" cy="642.56" r="0"/>
+                            <circle id="Ellipse_450" data-name="Ellipse 450" class="cls-5" cx="181.19" cy="471.08" r="0"/>
+                            <circle id="Ellipse_451" data-name="Ellipse 451" class="cls-5" cx="574.62" cy="94.48" r="0"/>
+                            <circle id="Ellipse_452" data-name="Ellipse 452" class="cls-5" cx="867.11" cy="753.22" r="0"/>
+                            <circle id="Ellipse_453" data-name="Ellipse 453" class="cls-5" cx="1441.73" cy="525.44" r="0"/>
                             <g id="Ellipse_454" data-name="Ellipse 454">
-                                <circle class="cls-2" cx="111.95" cy="126.18" r="31.71"/>
-                                <circle class="cls-3" cx="111.95" cy="126.18" r="29.12"/>
+                                <circle class="cls-2" cx="111.95" cy="126.18" r="0"/>
+                                <circle class="cls-3" cx="111.95" cy="126.18" r="0"/>
                             </g>
-                            <circle id="Ellipse_455" data-name="Ellipse 455" class="cls-4" cx="112.59" cy="126.83" r="19.41"/>
+                            <circle id="Ellipse_455" data-name="Ellipse 455" class="cls-4" cx="112.59" cy="126.83" r="0"/>
                             <g id="Ellipse_456" data-name="Ellipse 456">
-                                <circle class="cls-2" cx="1442.37" cy="674.92" r="31.71"/>
-                                <circle class="cls-3" cx="1442.37" cy="674.92" r="29.12"/>
+                                <circle class="cls-2" cx="1442.37" cy="674.92" r="0"/>
+                                <circle class="cls-3" cx="1442.37" cy="674.92" r="0"/>
                             </g>
-                            <circle id="Ellipse_457" data-name="Ellipse 457" class="cls-4" cx="1443.02" cy="675.57" r="19.41"/>
-                            <circle id="Ellipse_458" data-name="Ellipse 458" class="cls-4" cx="1441.08" cy="766.81" r="13.59"/>
-                            <circle id="Ellipse_459" data-name="Ellipse 459" class="cls-4" cx="1558.85" cy="799.16" r="13.59"/>
-                            <circle id="Ellipse_460" data-name="Ellipse 460" class="cls-4" cx="724.1" cy="13.59" r="13.59"/>
+                            <circle id="Ellipse_457" data-name="Ellipse 457" class="cls-4" cx="1443.02" cy="675.57" r="0"/>
+                            <circle id="Ellipse_458" data-name="Ellipse 458" class="cls-4" cx="1441.08" cy="766.81" r="0"/>
+                            <circle id="Ellipse_459" data-name="Ellipse 459" class="cls-4" cx="1558.85" cy="799.16" r="0"/>
+                            <circle id="Ellipse_460" data-name="Ellipse 460" class="cls-4" cx="724.1" cy="13.59" r="0"/>
                             <g id="Ellipse_461" data-name="Ellipse 461">
-                                <circle class="cls-2" id="Ellipse_461a" cx="1109.77" cy="84.77" r="31.71"/>
-                                <circle class="cls-3" id="Ellipse_461b" cx="1109.77" cy="84.77" r="29.12"/>
+                                <circle class="cls-2" id="Ellipse_461a" cx="1109.77" cy="84.77" r="0"/>
+                                <circle class="cls-3" id="Ellipse_461b" cx="1109.77" cy="84.77" r="0"/>
                             </g>
-                            <circle id="Ellipse_462" data-name="Ellipse 462" class="cls-4" cx="1110.41" cy="85.42" r="19.41"/>
-                            <circle id="Ellipse_463" data-name="Ellipse 463" class="cls-4" cx="1184.83" cy="13.59" r="13.59"/>
-                            <circle id="Ellipse_464" data-name="Ellipse 464" class="cls-4" cx="756.45" cy="812.1" r="13.59"/>
+                            <circle id="Ellipse_462" data-name="Ellipse 462" class="cls-4" cx="1110.41" cy="85.42" r="0"/>
+                            <circle id="Ellipse_463" data-name="Ellipse 463" class="cls-4" cx="1184.83" cy="13.59" r="0"/>
+                            <circle id="Ellipse_464" data-name="Ellipse 464" class="cls-4" cx="756.45" cy="812.1" r="0"/>
                             
                             <g id="Gruppe_159" class="gruppe" data-name="Gruppe 159">
                                 <ellipse id="Ellipse_374-2" data-name="Ellipse 374-2" class="cls-8" cx="347.49" cy="243.95" rx="145.6" ry="149.48"/>
@@ -135,21 +135,6 @@
             document.getElementById("Gruppe_161").setAttribute("class", "fadeIn gruppe");
             document.getElementById("Gruppe_162").setAttribute("class", "fadeIn gruppe");
             document.getElementById("Gruppe_163").setAttribute("class", "fadeIn gruppe");   
-
-            document.getElementById("Ellipse_448").setAttribute("r", "0");
-            document.getElementById("Ellipse_449").setAttribute("r", "0");
-            document.getElementById("Ellipse_450").setAttribute("r", "0");
-            document.getElementById("Ellipse_451").setAttribute("r", "0");
-            document.getElementById("Ellipse_452").setAttribute("r", "0");
-            document.getElementById("Ellipse_453").setAttribute("r", "0");
-            document.getElementById("Ellipse_455").setAttribute("r", "0");
-            document.getElementById("Ellipse_457").setAttribute("r", "0");
-            document.getElementById("Ellipse_458").setAttribute("r", "0");
-            document.getElementById("Ellipse_459").setAttribute("r", "0");
-            document.getElementById("Ellipse_460").setAttribute("r", "0");
-            document.getElementById("Ellipse_462").setAttribute("r", "0");
-            document.getElementById("Ellipse_463").setAttribute("r", "0");
-            document.getElementById("Ellipse_464").setAttribute("r", "0");
         },
         methods: {
            animStart() {
