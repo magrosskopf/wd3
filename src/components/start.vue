@@ -3,11 +3,9 @@
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1897.31 571.29">
             <g id="Ebene_2" data-name="Ebene 2">
                 <g id="Ebene_1-2" data-name="Ebene 1">
-                    <path id="Pfad_2402" data-name="Pfad 2402" class="cls-1"
-                        d="M1655.21,238.47,1737,363.37l60.37,33.36" />
+                    <path id="Pfad_2402" data-name="Pfad 2402" class="cls-1" d="M1655.21,238.47,1737,363.37l60.37,33.36" />
                     <path id="Pfad_2403" data-name="Pfad 2403" class="cls-1" d="M1655.21,223.23,1757.44.21" />
-                    <path id="Pfad_2404" data-name="Pfad 2404" class="cls-1"
-                        d="M1650.87,220.53l31.07-177.72L1848.25,112l-186.16,92.32" />
+                    <path id="Pfad_2404" data-name="Pfad 2404" class="cls-1" d="M1650.87,220.53l31.07-177.72L1848.25,112l-186.16,92.32" />
                     <path id="Pfad_2401" data-name="Pfad 2401" class="cls-1" d="M1314.75,273.26,1224.59,23.65" />
                     <path id="Pfad_2400" data-name="Pfad 2400" class="cls-1"
                         d="M990.46,145.67,1080,365.79,1322,283.16,1537.61,92l113.26,140.55-124,97-194.49-39.35L1485.93,430.5l45.66-95.6" />
@@ -464,6 +462,7 @@
 
     .cls-1 {
         stroke: #707070;
+        stroke-width: 1.5px;
     }
 
     .cls-3 {

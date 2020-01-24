@@ -344,6 +344,10 @@
     }
 
     /* SVG Style */
+    .cls-1 {
+        stroke-width: 1.5px;
+    }
+    
     .cls-1,
     .cls-2,
     .cls-3 {
