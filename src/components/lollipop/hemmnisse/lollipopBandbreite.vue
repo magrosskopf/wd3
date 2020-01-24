@@ -151,10 +151,10 @@
         }
       });
 
-      EventBus.$on('afterLoad', value => {
-        if(value === 0) {
-          EventBus.$on('slideChange', value => {
-            if(value !== 0) {
+      EventBus.$on('slideChange', value => {
+        if(value !== 0) {
+          EventBus.$on('afterLoad', value => {
+            if(value === 0) {
               this.options.series = []
             }
           });

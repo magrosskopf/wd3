@@ -188,11 +188,11 @@ export default {
     }
 
     .imgActive {
-        filter: invert(0) sepia(0) saturate(1) hue-rotate(0deg) brightness(5);
+        filter: brightness(0) invert(1);
     }
 
     .circle:hover img {
-        filter: invert(0) sepia(0) saturate(1) hue-rotate(0deg) brightness(5);
+        filter: brightness(0) invert(1);
     }
 
     .circle img {

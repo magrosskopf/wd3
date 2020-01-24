@@ -279,7 +279,9 @@
             </b-row>
             <b-row class="mt-5">
                 <b-col>
-                    <img src="@/assets/arrow_down.svg" width="40px" />
+                    <a href="#01">
+                        <img src="@/assets/arrow_down.svg" width="40px" />
+                    </a>
                 </b-col>
             </b-row>
         </b-container>

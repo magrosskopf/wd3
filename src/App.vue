@@ -374,8 +374,7 @@
           afterSlideLoad: this.afterSlideLoad,
           anchors: ['00', '01', '02', '03', '04', '05', '06', '07'],
           scrollHorizontally: true,
-          fadingEffect: 'slides',
-          slidesNavigation: true,
+          fadingEffect: 'slides'
         },
         legendChoice: '',
         changingChoice: false
@@ -391,8 +390,7 @@
         EventBus.$emit('slideChange', destination.index);
       },
 
-      afterSlideLoad(section, origin, destination) {
-        console.log(destination);
+      afterSlideLoad(section, origin) {
         EventBus.$emit('afterLoad', origin.index);
       },
 

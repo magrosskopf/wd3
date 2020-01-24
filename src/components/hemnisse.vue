@@ -3,7 +3,7 @@
         <b-row>
             <b-col>
                 <h2 class="h2-style" style="color: white;">
-                    Die Erfolge der Digitalisierung
+                    Hemmnisse der Digitalisierung
                 </h2>
                 <p style="color: white;">
                     Eine Übersicht der fünf größten Faktoren,<br>

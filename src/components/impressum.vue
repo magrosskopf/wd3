@@ -50,7 +50,8 @@
             <text class="cls-4" transform="translate(970 266)">Herausgeber:</text>
             <text class="cls-5" transform="translate(1110 266)">Bundesministerium für </text>
             <text class="cls-5" transform="translate(1010 293)">Wirtschaft und Energie (BMWi)</text>
-            <text class="cls-5" transform="translate(1076 320)">Stand: Juli 2018</text>
+            <text class="cls-4" transform="translate(1076 320)">Stand:</text>
+            <text class="cls-5" transform="translate(1145 320)">Juli 2018</text>
             <text class="cls-5" transform="translate(1100 347)"><a href="https://www.bmwi.de/Redaktion/DE/Publikationen/Digitale-Welt/monitoring-report-wirtschaft-digital-2018-langfassung.html">Zur Studie</a></text>
             <text class="cls-4" transform="translate(1080 374)">Icons: </text>
             <text class="cls-5" transform="translate(1145 374)">Flaticon</text></g>

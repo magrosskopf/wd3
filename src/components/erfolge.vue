@@ -3,7 +3,7 @@
         <b-row>
             <b-col>
                 <h2 class="h2-style">
-                    Die Erfolge der Digitalisierung
+                    Erfolge der Digitalisierung
                 </h2>
                 <p>
                     Eine Übersicht der fünf größten Erfolge aus Unternehmenssicht,<br>
