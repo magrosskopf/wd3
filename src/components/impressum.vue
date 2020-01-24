@@ -52,7 +52,7 @@
             <text class="cls-5" transform="translate(1010 293)">Wirtschaft und Energie (BMWi)</text>
             <text class="cls-4" transform="translate(1076 320)">Stand:</text>
             <text class="cls-5" transform="translate(1145 320)">Juli 2018</text>
-            <text class="cls-5" transform="translate(1100 347)"><a href="https://www.bmwi.de/Redaktion/DE/Publikationen/Digitale-Welt/monitoring-report-wirtschaft-digital-2018-langfassung.html">Zur Studie</a></text>
+            <text class="cls-5 cls-99" transform="translate(1100 347)"><a href="https://www.bmwi.de/Redaktion/DE/Publikationen/Digitale-Welt/monitoring-report-wirtschaft-digital-2018-langfassung.html">Zur Studie</a></text>
             <text class="cls-4" transform="translate(1080 374)">Icons: </text>
             <text class="cls-5" transform="translate(1145 374)">Flaticon</text></g>
           <g id="DHBW_Campus_Mosbach_Fachbereich_Onlinemedien" data-name="DHBW Campus Mosbach Fachbereich Onlinemedien"
@@ -169,5 +169,13 @@
 
 .cls-12 {
   fill: #c0d4e0;
+}
+
+.cls-99 {
+  text-decoration: underline;
+}
+
+.cls-99 a{
+  color: #08164a;
 }
 </style>

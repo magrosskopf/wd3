@@ -2,7 +2,7 @@
   <div id="app">
     <nav id="my-nav" ref="my-nav">
       <ul>
-        <li><a href="#00"><svg id="home-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.61 26.67"><g id="Ebene_2" data-name="Ebene 2"><g id="Ebene_1-2" data-name="Ebene 1"><path id="Icon_material-home" data-name="Icon material-home" class="cls-1" d="M13.3,26.17v-9h6v9h7.5v-12h4.5L16.3.67l-15,13.5H5.8v12Z"/></g></g></svg></a></li>
+        <li><a href="#00"><svg id="home-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32.61 26.67"><path id="Icon_material-home" data-name="Icon material-home" class="cls-1" d="M13.3,26.17v-9h6v9h7.5v-12h4.5L16.3.67l-15,13.5H5.8v12Z"/></svg></a></li>
         <li><a href="#01">01</a></li>
         <li><a href="#02">02</a></li>
         <li>
@@ -27,6 +27,7 @@
           </ul>
         </li>
         <li><a href="#06">06</a></li>
+        <li><a href="#07"><svg id="impressum-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m277.332031 128c0 11.78125-9.550781 21.332031-21.332031 21.332031s-21.332031-9.550781-21.332031-21.332031 9.550781-21.332031 21.332031-21.332031 21.332031 9.550781 21.332031 21.332031zm0 0"/><path d="m256 405.332031c-8.832031 0-16-7.167969-16-16v-165.332031h-21.332031c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h37.332031c8.832031 0 16 7.167969 16 16v181.332031c0 8.832031-7.167969 16-16 16zm0 0"/><path d="m256 512c-141.164062 0-256-114.835938-256-256s114.835938-256 256-256 256 114.835938 256 256-114.835938 256-256 256zm0-480c-123.519531 0-224 100.480469-224 224s100.480469 224 224 224 224-100.480469 224-224-100.480469-224-224-224zm0 0"/><path d="m304 405.332031h-96c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h96c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/></svg></a></li>
       </ul>
     </nav>
 
@@ -664,7 +665,7 @@ $gradient-color-end: #DFEDF4;
     margin: 6px 0 6px 12px;
   }
 
-  #my-nav ul li:nth-child(7):after {
+  #my-nav ul li:nth-child(8):after {
     content: "";
     display: none;
   }
@@ -684,6 +685,16 @@ $gradient-color-end: #DFEDF4;
   }
 
   #home-icon:hover {
+    fill: #00071F;
+  }
+
+  #impressum-icon {
+    width: 27px;
+    stroke: white;
+    stroke-width: 5px;
+  }
+
+  #impressum-icon:hover {
     fill: #00071F;
   }
 
