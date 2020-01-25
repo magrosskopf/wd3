@@ -315,7 +315,7 @@
         onLeave(origin, destination) {
               var child = this.$refs.erfolge;
               var hem = this.$refs.hemnisse;
-          if(destination.anchor.indexOf("03") === 0 && this.locked3 === true) {
+          if(destination.anchor.indexOf("02") === 0 && this.locked3 === true) {
               child.animStart();
           }
           if(destination.anchor.indexOf("04") === 0 && this.locked3 === true) {
@@ -369,7 +369,7 @@ $gradient-color-end: #DFEDF4;
     font-family: 'Orbitron', sans-serif;
     font-weight: 400;
     text-transform: uppercase;
-    padding: 100px 0 60px 0;
+    padding: 0 0 60px 0;
   }
 
   .h2-styleSlide {

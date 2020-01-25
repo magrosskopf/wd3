@@ -2,10 +2,10 @@
     <b-container class="bv-example-row">
         <b-row>
             <b-col>
-                <h2 class="h2-style">
+                <h2 class="h2-style" style="color: white;">
                     Die Erfolge der Digitalisierung
                 </h2>
-                <p>
+                <p style="color: white;">
                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
                     labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
                 </p>
