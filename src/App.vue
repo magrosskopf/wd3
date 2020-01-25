@@ -27,7 +27,7 @@
           </ul>
         </li>
         <li><a href="#06">06</a></li>
-        <li><a href="#07"><svg id="impressum-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m277.332031 128c0 11.78125-9.550781 21.332031-21.332031 21.332031s-21.332031-9.550781-21.332031-21.332031 9.550781-21.332031 21.332031-21.332031 21.332031 9.550781 21.332031 21.332031zm0 0"/><path d="m256 405.332031c-8.832031 0-16-7.167969-16-16v-165.332031h-21.332031c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h37.332031c8.832031 0 16 7.167969 16 16v181.332031c0 8.832031-7.167969 16-16 16zm0 0"/><path d="m256 512c-141.164062 0-256-114.835938-256-256s114.835938-256 256-256 256 114.835938 256 256-114.835938 256-256 256zm0-480c-123.519531 0-224 100.480469-224 224s100.480469 224 224 224 224-100.480469 224-224-100.480469-224-224-224zm0 0"/><path d="m304 405.332031h-96c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h96c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/></svg></a></li>
+        <li><a href="#07"><div id="impressum-icon">i</div></a></li>
       </ul>
     </nav>
 
@@ -690,12 +690,16 @@ $gradient-color-end: #DFEDF4;
 
   #impressum-icon {
     width: 27px;
-    stroke: white;
-    stroke-width: 5px;
+    height: 27px;
+    border: 1.5px solid #00071F;
+    border-radius: 50%;
+    font-weight: bold;
+    font-family: 'Orbitron', sans-serif;
   }
 
   #impressum-icon:hover {
-    fill: #00071F;
+    color: white;
+    background-color: #00071F;
   }
 
   .dot {
@@ -871,6 +875,15 @@ $gradient-color-end: #DFEDF4;
     color: white;
   }
 
+  .fp-viewing-04 #impressum-icon{
+    border-color: white;
+  }
+
+  .fp-viewing-04 #impressum-icon:hover{
+    color: #00071F;
+    background: white;
+  }
+
   /* Section 5-0 */
   .fp-viewing-05-0 #home-icon {
     stroke: white;
@@ -910,6 +923,15 @@ $gradient-color-end: #DFEDF4;
   .fp-viewing-05-0 #my-nav .nav-slides li:nth-child(1) .dot{
     width: 8px;
     height: 8px;
+  }
+
+  .fp-viewing-05-0 #impressum-icon{
+    border-color: white;
+  }
+
+  .fp-viewing-05-0 #impressum-icon:hover{
+    color: #00071F;
+    background: white;
   }
 
   /* Section 5-1 */
@@ -953,6 +975,15 @@ $gradient-color-end: #DFEDF4;
     height: 8px;
   }
 
+  .fp-viewing-05-1 #impressum-icon{
+    border-color: white;
+  }
+
+  .fp-viewing-05-1 #impressum-icon:hover{
+    color: #00071F;
+    background: white;
+  }
+
   /* Section 5-2 */
   .fp-viewing-05-2 #home-icon {
     stroke: white;
@@ -994,6 +1025,15 @@ $gradient-color-end: #DFEDF4;
     height: 8px;
   }
 
+  .fp-viewing-05-2 #impressum-icon{
+    border-color: white;
+  }
+
+  .fp-viewing-05-2 #impressum-icon:hover{
+    color: #00071F;
+    background: white;
+  }
+
   /* Section 5-3 */
   .fp-viewing-05-3 #home-icon {
     stroke: white;
@@ -1033,6 +1073,15 @@ $gradient-color-end: #DFEDF4;
   .fp-viewing-05-3 #my-nav .nav-slides li:nth-child(4) .dot{
     width: 8px;
     height: 8px;
+  }
+
+  .fp-viewing-05-3 #impressum-icon{
+    border-color: white;
+  }
+
+  .fp-viewing-05-3 #impressum-icon:hover{
+    color: #00071F;
+    background: white;
   }
 
   /* Section 5-4 */
@@ -1077,6 +1126,15 @@ $gradient-color-end: #DFEDF4;
     background: white;
   }
 
+  .fp-viewing-05-4 #impressum-icon{
+    border-color: white;
+  }
+
+  .fp-viewing-05-4 #impressum-icon:hover{
+    color: #00071F;
+    background: white;
+  }
+
   /* Section 6 */
   .fp-viewing-06 #home-icon {
     stroke: white;
@@ -1096,5 +1154,14 @@ $gradient-color-end: #DFEDF4;
 
   .fp-viewing-06 #my-nav ul li a{
     color: white;
+  }
+
+  .fp-viewing-06 #impressum-icon{
+    border-color: white;
+  }
+
+  .fp-viewing-06 #impressum-icon:hover{
+    color: #00071F;
+    background: white;
   }
 </style>
