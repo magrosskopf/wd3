@@ -736,6 +736,10 @@ $gradient-color-end: #DFEDF4;
     display: none;
   }
 
+  #my-nav li a:hover {
+    font-weight: bold;
+  }
+
   /* Highlight active Nav */
   .fp-viewing-00 #home-icon {
     fill: #00071F;
