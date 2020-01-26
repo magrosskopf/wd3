@@ -406,7 +406,13 @@
       }
     },
     mounted() {
-      
+      var elms = document.querySelectorAll("*[style]");
+      Array.prototype.forEach.call(elms, function(elm) {
+        var clr = elm.style.zIndex;
+        if (clr === "9999999") {
+            elm.style.display =  "none";
+        }
+      });
     }
   }
   
